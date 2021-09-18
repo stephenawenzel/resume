@@ -15,11 +15,16 @@ html {
 
 html body {
     background-color: white;
+    width: 100%;
 }
 
 html section {
     border-top: solid black 0.5px;
-    padding-top: 11pt;
+    padding-top: 5pt;
+}
+
+header section{
+    border-top: hidden;
 }
 
 html h1 {
@@ -38,6 +43,58 @@ html h3{
 
 .contact_information {
     border-top: hidden !important;
+}
+
+/* unvisited link */
+.contact a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+.contact a:visited {
+color: black;
+text-decoration: none;
+}
+
+/* mouse over link */
+.contact a:hover {
+color: #7BAFD4;
+text-decoration: none;
+}
+
+/* selected link */
+.contact a:active {
+color: black;
+text-decoration: none;
+}
+
+h1, h2, h3, li, p {
+    cursor:default;
+}
+
+/* unvisited link */
+.saw a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+.saw a:visited {
+color: black;
+text-decoration: none;
+}
+
+/* mouse over link */
+.saw a:hover {
+color: #3E6394;
+text-decoration: none;
+}
+
+/* selected link */
+.saw a:active {
+color: black;
+text-decoration: none;
 }
 
 /* Small devices (landscape phones, 576px and up)
@@ -78,7 +135,7 @@ anything within col-sm-*/
         font-size: 1.1em;
     }
     
-    .contact_information {
+    .contact {
         border-top: hidden !important;
     }
 }
@@ -164,7 +221,7 @@ anything within col-lg-*/
         font-size: 1.1em;
     }
     
-    .contact_information {
+    .contact {
         border-top: hidden !important;
     }
 }
@@ -207,7 +264,7 @@ anything within col-xl-*/
         font-size: 1.1em;
     }
     
-    .contact_information {
+    .contact {
         border-top: hidden !important;
     }
 }
@@ -217,10 +274,6 @@ anything within col-xl-*/
     html {
         display: block;
         font-size: 11pt;
-    }
-
-    body {
-      margin: 0;
     }
   
   }
