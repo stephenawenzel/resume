@@ -4,8 +4,6 @@
 html {
     display: flex;
     justify-content: center;
-    width: 8.5in;
-    height: 11in;
     font-size: 9pt;
 }
 
@@ -103,13 +101,11 @@ anything within col-sm-*/
     html {
         display: flex;
         justify-content: center;
-        max-height: 11in;
         font-size: 11pt;
     }
     
     .container {
         background-color: white;
-        max-width: 8.5in;
     }
     
     html body {
@@ -146,13 +142,11 @@ anything within col-md-*/
     html {
         display: flex;
         justify-content: center;
-        max-height: 11in;
         font-size: 11pt;
     }
     
     .container {
         background-color: white;
-        max-width: 8.5in;
     }
     
     html body {
@@ -189,13 +183,11 @@ anything within col-lg-*/
     html {
         display: flex;
         justify-content: center;
-        max-height: 11in;
         font-size: 11pt;
     }
     
     .container {
         background-color: white;
-        max-width: 8.5in;
     }
     
     html body {
@@ -232,13 +224,11 @@ anything within col-xl-*/
     html {
         display: flex;
         justify-content: center;
-        max-height: 11in;
         font-size: 13pt;
     }
     
     .container {
         background-color: white;
-        max-width: 8.5in;
     }
     
     html body {
@@ -274,6 +264,8 @@ anything within col-xl-*/
     html {
         display: block;
         font-size: 11pt;
+        width: 8.5in;
+        height: 11in;
     }
   
   }
