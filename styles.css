@@ -1,247 +1,157 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/  
 /*anything under col-*/
-html {
-    display: flex;
-    justify-content: center;
-    font-size: 9pt;
-    font-family: 'EB Garamond', serif;
-}
 
-.container {
-    background-color: white;
-}
+    /*-----Everything-------*/
 
-html body {
-    background-color: white;
-    width: 100%;
-}
-
-html section {
-    border-top: solid black 0.5px;
-    padding-top: 5pt;
-}
-
-header section{
-    border-top: hidden;
-}
-
-html h1 {
-    font-weight:bold;
-    font-size: 1.8em;
-}
-
-html h2 {
-    font-style: italic;
-    font-size: 1.2em;
-}
-
-html h3{
-    font-size: 1.1em;
-}
-
-.contact_information {
-    border-top: hidden !important;
-}
-
-/* unvisited link */
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-color: black;
-text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-color: #5d95de;
-text-decoration: none;
-}
-
-/* selected link */
-a:active {
-color: black;
-text-decoration: none;
-}
-
-h1, h2, h3, li, p {
-    cursor:default;
-}
-
-/* Small devices (landscape phones, 576px and up)
-anything within col-sm-*/
-@media only screen (min-width:576px){
     html {
-        display: flex;
-        justify-content: center;
-        font-size: 11pt;
-    }
-    
-    .container {
-        background-color: white;
-    }
-    
-    html body {
-        background-color: white;
-    }
-    
-    html section {
-        border-top: solid black 0.5px;
-        padding-top: 11pt;
-    }
-    
-    html h1 {
-        font-weight:bold;
-        font-size: 1.8em;
-    }
-    
-    html h2 {
-        font-style: italic;
-        font-size: 1.2em;
-    }
-    
-    html h3{
-        font-size: 1.1em;
-    }
-    
-    .contact {
-        border-top: hidden !important;
-    }
-}
-
-/* Medium devices (tablets, 768px and up)
-anything within col-md-*/
-@media only screen (min-width: 768px) {
-    html {
-        font-size: 11pt;
-    }
-    
-    .container {
-        background-color: white;
-    }
-    
-    html body {
-        background-color: white;
-    }
-    
-    html section {
-        border-top: solid black 0.5px;
-        padding-top: 11pt;
-    }
-    
-    html h1 {
-        font-weight:bold;
-        font-size: 1.8em;
-    }
-    
-    html h2 {
-        font-style: italic;
-        font-size: 1.2em;
-    }
-    
-    html h3{
-        font-size: 1.1em;
-    }
-    
-    .contact_information {
-        border-top: hidden !important;
-    }
-}
-
-/* Large devices (desktops, 992px and up)
-anything within col-lg-*/
-@media only screen (min-width: 992px) {
-    html {
-        display: flex;
-        justify-content: center;
-        font-size: 11pt;
-    }
-    
-    .container {
-        background-color: white;
-    }
-    
-    html body {
-        background-color: white;
-    }
-    
-    html section {
-        border-top: solid black 0.5px;
-        padding-top: 11pt;
-    }
-    
-    html h1 {
-        font-weight:bold;
-        font-size: 1.8em;
-    }
-    
-    html h2 {
-        font-style: italic;
-        font-size: 1.2em;
-    }
-    
-    html h3{
-        font-size: 1.1em;
-    }
-    
-    .contact {
-        border-top: hidden !important;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up)
-anything within col-xl-*/
-@media only screen (min-width: 1200px) {
-    html {
-        display: flex;
-        justify-content: center;
-        font-size: 13pt;
-    }
-    
-    .container {
-        background-color: white;
-    }
-    
-    html body {
-        background-color: white;
-    }
-    
-    html section {
-        border-top: solid black 0.5px;
-        padding-top: 11pt;
-    }
-    
-    html h1 {
-        font-weight:bold;
-        font-size: 1.8em;
-    }
-    
-    html h2 {
-        font-style: italic;
-        font-size: 1.2em;
-    }
-    
-    html h3{
-        font-size: 1.1em;
-    }
-    
-    .contact {
-        border-top: hidden !important;
-    }
-}
-
-/*the layout just for printing*/
-@media only print {
-    html {
-        display: block;
-        font-size: 11pt;
-        width: 8.5in;
-        height: 11in;
+        font-family: 'EB Garamond', serif;
         color: black;
     }
-  
-  }
+
+    body {
+        cursor:default;
+        -webkit-user-select: none; /* Webkit */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10 */
+        /* Currently not supported in Opera but will be soon */
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100vw;
+        background-color: lightgray !important;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .section-titles {
+        font-size: 18pt;
+        padding: 2vh 0 2vh 0;
+    }
+
+    /*-------Header----------------*/
+
+    .header-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0 3vw 0 3vw;
+    }
+
+        .header-content * {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            color: black;
+            line-height: 1.6em;
+        }
+
+        .header-content h1 {
+            font-size: 20pt;
+            margin: 2vh 0 2vh 0;
+        }
+
+        #goal {
+            margin: 1vh 0 1vh 0;
+        }
+
+        #email {
+            color: gray;
+        }
+
+        #location {
+            color: gray;
+        }
+
+        #phone {
+            color: gray;
+        }
+
+        .btn {
+            height: 2em;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            margin: 3vh 0 0 0;
+            font-weight: 500;
+            border-radius: 15px;
+            border: none;
+        }
+
+        .btn:link {
+            background-color: #4B9CD3;
+            color: white;
+        }
+
+        .btn:visited {
+            background-color: #4B9CD3;
+            color: white;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #13294B;
+            color: white;
+        }
+
+        .btn:active {
+            background-color: #4B9CD3;
+            color: white;
+        }
+
+        /*-------Experience----------------*/
+
+        .experience {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 0 3vw 0 3vw;
+        }
+
+            .experience * {
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                color: black;
+                line-height: 1.6em;
+            }
+
+            .e-about {
+                padding: 0 3vw 0 3vw;
+                margin: 2vh 0 2vh 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .e-titles {
+                    font-size: 14pt;
+                }
+
+                .e-co {
+                    font-size: 12pt;
+                    color: gray;
+                }
+
+                .e-time {
+                    color: gray;
+                }
+
+                .e-location {
+                    color: gray;
+                }
+
+                .e-about ul {
+                    padding: 0 0 0 5vw;
+                    margin: 1vh 0 1vh 0;
+                }

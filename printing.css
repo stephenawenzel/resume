@@ -1,0 +1,245 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/  
+/*anything under col-*/
+
+.buttons {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn {
+    margin-top: 3vh;
+    height: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:link {
+    background-color: #4B9CD3;
+    color: white;
+}
+
+.btn:visited {
+    background-color: #4B9CD3;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #13294B;
+    color: white;
+}
+
+.btn:active {
+    background-color: #4B9CD3;
+    color: white;
+}
+
+@media screen {
+
+    *:not(header, body, html) {
+        display: none;
+    }
+
+}
+
+@media print {
+    header {
+        display: none !important;
+    }
+
+    /*-----Everything-------*/
+
+    html {
+        font-family: 'EB Garamond', serif;
+        color: black;
+    }
+
+    body {
+        cursor:default;
+        -webkit-user-select: none; /* Webkit */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10 */
+        /* Currently not supported in Opera but will be soon */
+        -o-user-select: none;
+        user-select: none;
+        text-decoration: none;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100vw;
+        background-color: lightgray !important;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .section-titles {
+        font-size: 18pt;
+        padding: 2vh 0 2vh 0;
+    }
+
+    #print-button {
+        display: none;
+    }
+
+    .group1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        border-right: lightgray solid 1px;
+    }
+    
+    .group2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    /*-------Header----------------*/
+
+    .header-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0 7vw 0 7vw;
+    }
+
+        .header-content * {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            color: black;
+            line-height: 1em;
+        }
+
+        .header-content h1 {
+            font-size: 20pt;
+        }
+
+        #goal {
+            margin: 1vh 0 1vh 0;
+        }
+
+        #email {
+            color: gray;
+        }
+
+        #location {
+            color: gray;
+        }
+
+        #phone {
+            color: gray;
+        }
+
+        /*-------Experience----------------*/
+
+        .experience {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+            .experience * {
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                color: black;
+                line-height: 1.1em;
+            }
+
+            .e-about {
+                margin: 0.25vh 0 0.25vh 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+                .e-titles {
+                    font-size: 14pt;
+                }
+
+                    .group2 .e-titles {
+                        padding-left: 1vw;
+                    }
+
+                .e-co {
+                    font-size: 12pt;
+                    color: gray;
+                }
+
+                    .group2 .e-co {
+                        padding-left: 1vw;
+                    }
+
+                .e-time {
+                    color: gray;
+                }
+
+                    .group2 .e-time {
+                        padding-left: 1vw;
+                    }
+
+                .e-location {
+                    color: gray;
+                    padding-bottom: 0.5vh;
+                }
+
+                    .group2 .e-location {
+                        padding-left: 1vw;
+                    }
+
+                .e-about ul {
+                    padding: 0 0 0 2vw;
+                }
+
+                    .group2 .e-about ul {
+                        padding-left: 2.8vw;
+                    }
+
+                    .group1 .e-about ul {
+                        padding-right: 1vw !important;
+                    }
+
+        .skills {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start !important;
+        }
+
+        .skill-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-between;
+        }
+
+        .btn {
+            height: 2em;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            margin: 3vh 0 0 0;
+            font-weight: 500;
+            border-radius: 15px;
+            border: none;
+        }
+
+    }
