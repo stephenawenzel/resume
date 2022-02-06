@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&family=Oswald:wght@300&family=Playfair+Display&family=Roboto:wght@100&family=Sora:wght@200&display=swap" rel="stylesheet">
     <!-- Links to CSS stylesheets -->
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="experiences.css" media="screen">
     <!-- Links to JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -28,43 +28,57 @@
 <body class="container-fluid">
     <header class="row">
         <nav class="col-12 col-sm-12 navbar navbar-expand-md">
-            <button class="col-12 col-sm-12 navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="col-12 col-sm-12 navbar-toggler custom-toggler p-1" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <nav class="col-12 col-sm-12 collapse navbar-collapse" id="sawnavbar">
+            <nav class="col-12 col-sm-12 collapse navbar-collapse pb-1 pt-1" id="sawnavbar">
                 <ul class="col-12 col-sm-12 navbar-nav">
-                    <li class="col-12 col-md-2 nav-item active">
+                    <li class="col-12 col-sm-12 col-md-2 nav-item">
                         <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
+                    <li class="col-12 col-sm-12 col-md-2 nav-item">
                         <a class="nav-link" href="education.html">Education</a>
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
+                    <li class="col-12 col-sm-12 col-md-2 nav-item">
                         <a class="nav-link" href="experiences.html">Experiences</a>
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
-                        <a class="nav-link" href="skills.html">Skills</a>
+                    <li class="col-12 col-sm-12 col-md-2 nav-item active">
+                        <a class="nav-link" href="skills_and_certifications.html">Skills</a>
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
+                    <li class="col-12 col-sm-12 col-md-2 nav-item">
                         <a class="nav-link" href="https://stephenawenzel.github.io/stephenwenzelphotography/" target="_blank">Photography</a>
                     </li>
-                    <li class="col-12 col-md-2 nav-item">
+                    <li class="col-12 col-sm-12 col-md-2 nav-item">
                         <a class="nav-link" href="printing.html">Print Resume</a>
                     </li>
                 </ul>
             </nav>
         </nav>
-        <section id="other" class="col-12 col-sm-12 col-lg-12">
-            <article class="col-8 col-sm-6 col-lg-4 img_container">
-                <img id="headshot" src="transparent_headshot.png" onMouseDown="popupMsg('Unable to access image functionalities')">
+    </header>
+    <main class="row">
+        <section class="col-12 col-sm-12 experience">
+            <article class="col-12 col-sm-12 col-lg-10 e-about">
+                <h4 class="col-12 col-sm-12 e-titles">Certifications</h4>
+                <h5 class="col-12 col-sm-12 e-co">Adult and Pediatric First Aid/CPR/AED Certification</h5>
+                <p class="col-12 col-sm-12 e-time"><i>American Red Cross</i></p>
+                <p class="col-12 col-sm-12 e-location">Exp. 2023</p>
             </article>
-            <article class="col-12 col-sm-12 col-md-6 col-lg-6 box">
-                <img class="col-12 col-sm-7 col-md-12 col-lg-12" src="white_signature.png" onMouseDown="popupMsg('Unable to access image functionalities')">
-                <p class="col-12 col-sm-12 col-lg-12 text-center"><i>An aspiring ophthalmologist with an eye for photography</i></p>
+            <article class="col-12 col-sm-12 col-lg-10 e-about">
+                <h4 class="col-12 col-sm-12 e-titles">Skills</h4>
+                <p class="col-12 col-sm-12 e-location">Confocal Lenses - Biological Photography & Videography</p>
+                <p class="col-12 col-sm-12 e-location">Fiji Image Processor</p>
+                <p class="col-12 col-sm-12 e-location">NMR Spectrometry</p>
+                <p class="col-12 col-sm-12 e-location">UV-Vis Spectrometry</p>
+                <p class="col-12 col-sm-12 e-location">Solvent-Solvent Extractions</p>
+                <p class="col-12 col-sm-12 e-location">Column, Gas, Size-Exclusion, Thin-Layer, and High Performance Liquid (HPL) Chromatography</p>
+                <p class="col-12 col-sm-12 e-location">Writing for Scientific Projects</p>
+                <p class="col-12 col-sm-12 e-location">HTML5, CSS3 - Front-End Web Design</p>
+                <p class="col-12 col-sm-12 e-location">DSLRPortrait Photography</p>
+                <p class="col-12 col-sm-12 e-location">Adobe Suite: <i>Photoshop, Lightroom</i></p>
             </article>
         </section>
-    </header>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

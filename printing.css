@@ -20,27 +20,34 @@
 }
 
 .btn:link {
-    background-color: #4B9CD3;
-    color: white;
+    background-color: #313638;
+    color: #DAA520;
+    border: 1px solid white;
 }
 
 .btn:visited {
-    background-color: #4B9CD3;
-    color: white;
-    border: none;
+    background-color: #313638;
+    color: #DAA520;
+    border: 1px solid white;
 }
 
 .btn:hover {
-    background-color: #13294B;
-    color: white;
+    background-color: white;
+    color: #DAA520;
+    border: 1px solid white;
 }
 
 .btn:active {
-    background-color: #4B9CD3;
-    color: white;
+    background-color: #313638;
+    color: #DAA520;
+    border: 1px solid white;
 }
 
 @media screen {
+
+    body {
+        background-color: #313638;
+    }
 
     *:not(header, body, html) {
         display: none;
@@ -61,7 +68,7 @@
     }
 
     body {
-        cursor:default;
+        cursor: default;
         -webkit-user-select: none; /* Webkit */
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE 10 */
@@ -74,13 +81,12 @@
     main {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .divider {
         height: 1px;
-        width: 100vw;
         background-color: lightgray !important;
         margin-top: 0.5vh;
         margin-bottom: 0.5vh;
@@ -95,15 +101,7 @@
         display: none;
     }
 
-    .group1 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: space-between;
-        border-right: lightgray solid 1px;
-    }
-    
-    .group2 {
+    .group {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -115,35 +113,34 @@
     .header-content {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        padding: 0 7vw 0 7vw;
+        justify-items: center;
+        align-items: center;
+        text-decoration: none;
     }
 
         .header-content * {
-            padding: 0 0 0 0;
-            margin: 0 0 0 0;
             color: black;
             line-height: 1em;
         }
 
         .header-content h1 {
             font-size: 20pt;
-        }
-
-        #goal {
-            margin: 1vh 0 1vh 0;
+            padding-bottom: 4pt;
         }
 
         #email {
             color: gray;
+            text-decoration: none;
         }
 
         #location {
             color: gray;
+            text-decoration: none;
         }
 
         #phone {
             color: gray;
+            text-decoration: none;
         }
 
         /*-------Experience----------------*/
@@ -153,6 +150,9 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
+            border-top: 2px solid gray;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
 
             .experience * {
@@ -174,60 +174,27 @@
                     font-size: 14pt;
                 }
 
-                    .group2 .e-titles {
-                        padding-left: 1vw;
-                    }
-
                 .e-co {
                     font-size: 12pt;
                     color: gray;
                 }
 
-                    .group2 .e-co {
-                        padding-left: 1vw;
-                    }
-
                 .e-time {
                     color: gray;
                 }
-
-                    .group2 .e-time {
-                        padding-left: 1vw;
-                    }
 
                 .e-location {
                     color: gray;
                     padding-bottom: 0.5vh;
                 }
 
-                    .group2 .e-location {
-                        padding-left: 1vw;
-                    }
-
                 .e-about ul {
                     padding: 0 0 0 2vw;
                 }
 
-                    .group2 .e-about ul {
-                        padding-left: 2.8vw;
-                    }
-
-                    .group1 .e-about ul {
-                        padding-right: 1vw !important;
-                    }
-
-        .skills {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: flex-start !important;
-        }
-
-        .skill-container {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            align-content: space-between;
+        .skills p {
+            line-height: 1.1em;
+            font-size: 12pt;
         }
 
         .btn {
@@ -240,6 +207,20 @@
             font-weight: 500;
             border-radius: 15px;
             border: none;
+        }
+
+        .skills {
+            border-bottom: 2px solid gray;
+            padding-bottom: 1em;
+        }
+
+        .certs {
+            border-top: 2px solid gray;
+            padding-top: 1em;
+        }
+
+        .act-border {
+            padding-bottom: 1em;
         }
 
     }

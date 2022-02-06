@@ -1,157 +1,204 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/*No media query for `xs` since this is the default in Bootstrap*/  
-/*anything under col-*/
+/*Fix the navbar. You need it to collapse when you click it again*/
 
-    /*-----Everything-------*/
 
-    html {
-        font-family: 'EB Garamond', serif;
-        color: black;
-    }
+/*extra small screens*/
 
-    body {
-        cursor:default;
+    body {    
         -webkit-user-select: none; /* Webkit */
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE 10 */
         /* Currently not supported in Opera but will be soon */
         -o-user-select: none;
         user-select: none;
+        font-family: 'EB Garamond', serif;
     }
 
-    main {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #313638;
+        color: white;
+        font-size: 1em;
+    }
+    
+    #other {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        height: 92vh;
+    }
+
+    .box {        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+        .box p {
+            margin-bottom: 0 !important;
+        }
+
+    nav {
+        z-index: 11;
+        min-height: 8vh;
+        background-color: white;
+    }
+    
+    nav ul {
+        background-color: #FFFFFF;
+    }
+
+    .active a:link {
+        color: #DAA520;
+    }
+
+    .active a:visited {
+        color: #DAA520;
+    }
+
+    .active a:hover {
+        color: #DAA520;
+    }
+
+    .active a:active {
+        color: #DAA520;
+    }
+    
+    .custom-toggler .navbar-toggler {
+        border-color: rgb(49, 54, 56);
+    }
+    
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49, 54, 56, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    
+        .nav-item {
+          text-align: center;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+        }
+    
+            .nav-item a {
+                font-weight: 500;
+                color: #313638;
+            }
+    
+            .nav-item a:hover {
+                color: #DAA520;
+            }
+    
+        .nav-link {
+          font-size: 1.2rem;
+          color: #313638;
+        }
+    
+    #headshot {
+        padding: 0 0 0 0;
+        margin: 0 0 5vh 0;
+        background-image: linear-gradient(to bottom right,white, #546E85);
+        width: 100%;
+    }
+    
+/*small screens*/
+@media screen and (min-width: 576px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+    
+    #other {
+        height: 92vh;
+    }
+    
+    nav {
+        z-index: 11;
+        min-height: 8vh;
+        background-color: white;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
     }
+    
+        .nav-link {
+          font-size: 1.2rem;
+        }
 
-    .divider {
-        height: 1px;
-        width: 100vw;
-        background-color: lightgray !important;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        .img_container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #headshot {
+            display: block;
+            max-width: 100%;
+            max-height: 60vh;
+            width: auto;
+            height: auto;
+        }
+    
+}
+
+/*medium screens*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 1em;
     }
-
-    .section-titles {
-        font-size: 18pt;
-        padding: 2vh 0 2vh 0;
-    }
-
-    /*-------Header----------------*/
-
-    .header-content {
+    
+    #other {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        padding: 0 3vw 0 3vw;
+        align-items: center;
     }
-
-        .header-content * {
-            padding: 0 0 0 0;
-            margin: 0 0 0 0;
-            color: black;
-            line-height: 1.6em;
+    
+        .nav-link {
+          font-size: 0.9rem;
         }
+    
+}
 
-        .header-content h1 {
-            font-size: 20pt;
-            margin: 2vh 0 2vh 0;
+/*large screens*/
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 1.05em;
+    }
+    
+        .nav-link {
+          font-size: 1em;
+        }    
+}
+
+/*extra large screens*/
+@media screen and (min-width: 1200px) {
+    header {
+        font-size: 1.2em;
+    }
+    
+        .nav-link {
+          font-size: 1em;
         }
+    
+}
 
-        #goal {
-            margin: 1vh 0 1vh 0;
+/*extra extra large screens*/
+@media screen and (min-width: 1400px) {
+    header {
+        font-size: 1.3em;
+    }
+    
+        .nav-link {
+          font-size: 1.2rem;
         }
-
-        #email {
-            color: gray;
-        }
-
-        #location {
-            color: gray;
-        }
-
-        #phone {
-            color: gray;
-        }
-
-        .btn {
-            height: 2em;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-            margin: 3vh 0 0 0;
-            font-weight: 500;
-            border-radius: 15px;
-            border: none;
-        }
-
-        .btn:link {
-            background-color: #4B9CD3;
-            color: white;
-        }
-
-        .btn:visited {
-            background-color: #4B9CD3;
-            color: white;
-            border: none;
-        }
-
-        .btn:hover {
-            background-color: #13294B;
-            color: white;
-        }
-
-        .btn:active {
-            background-color: #4B9CD3;
-            color: white;
-        }
-
-        /*-------Experience----------------*/
-
-        .experience {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            padding: 0 3vw 0 3vw;
-        }
-
-            .experience * {
-                padding: 0 0 0 0;
-                margin: 0 0 0 0;
-                color: black;
-                line-height: 1.6em;
-            }
-
-            .e-about {
-                padding: 0 3vw 0 3vw;
-                margin: 2vh 0 2vh 0;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .e-titles {
-                    font-size: 14pt;
-                }
-
-                .e-co {
-                    font-size: 12pt;
-                    color: gray;
-                }
-
-                .e-time {
-                    color: gray;
-                }
-
-                .e-location {
-                    color: gray;
-                }
-
-                .e-about ul {
-                    padding: 0 0 0 5vw;
-                    margin: 1vh 0 1vh 0;
-                }
+}
