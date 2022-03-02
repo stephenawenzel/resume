@@ -1,3 +1,22 @@
+html::-webkit-scrollbar {
+    width: 10px;
+    background: #313638;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#E8B130;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #313638;
+}
+
+
 /*Fix the navbar. You need it to collapse when you click it again*/
 
 
@@ -48,8 +67,9 @@
         background-color: white;
     }
     
-    nav ul {
-        background-color: #FFFFFF;
+    .navbar-nav {
+        background-color: white;
+        padding: 0;
     }
 
     .active a:link {
@@ -116,7 +136,7 @@
     }
     
     #other {
-        height: 92vh;
+        height: 90vh;
     }
     
     nav {
@@ -161,6 +181,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        height: 89vh;
     }
     
         .nav-link {
