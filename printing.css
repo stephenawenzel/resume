@@ -1,61 +1,313 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-/*No media query for `xs` since this is the default in Bootstrap*/  
-/*anything under col-*/
+/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+    1. BIG IDEA CONCEPT
+    2. AUDIENCE TO TARGET
+    3. RESEARCH
+    4. UI DESIGN IDEAS
+        > COLOR PALETTE & TYPOGRAPHY
+            #003049 #E8B130 #FFFFFF
+            > COLOR BLINDNESS
+        > MOBILE-FIRST DESIGN
+    5. DESIGN PROCESS
+        A. GENERAL SETTINGS
+            a. MOBILE -> ENORMOUS
+        B. HEADER
+            a. MOBILE -> ENORMOUS
+        C. FOOTER
+            a. MOBILE -> ENORMOUS
+        D. MAIN
+            a. MOBILE -> ENORMOUS
+    6. SHOW PEOPLE. TAKE NOTES.
+    7. IMPLEMENT WHAT YOU LEARNED
+    8. ADD NEW IDEAS
+?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
 
-.buttons {
-    height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
 
-.btn {
-    margin-top: 3vh;
-    height: 3rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.btn:link {
-    background-color: #313638;
-    color: #DAA520;
-    border: 1px solid white;
-}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-.btn:visited {
-    background-color: #313638;
-    color: #DAA520;
-    border: 1px solid white;
-}
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-.btn:hover {
-    background-color: white;
-    color: #DAA520;
-    border: 1px solid white;
-}
-
-.btn:active {
-    background-color: #313638;
-    color: #DAA520;
-    border: 1px solid white;
-}
-
-@media screen {
-
-    body {
-        background-color: #313638;
+    body {    
+        -webkit-user-select: none; /* Webkit */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10 */
+        /* Currently not supported in Opera but will be soon */
+        -o-user-select: none;
+        user-select: none;
+        font-family: 'EB Garamond', serif;
     }
 
-    *:not(header, body, html) {
-        display: none;
+    * {
+        cursor: default;
     }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
 
 }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+    .buttons {
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .btn {
+        margin-top: 3vh;
+        height: 3rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn:link {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:visited {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #DAA520;
+        border: 1px solid white;
+    }
+
+    .btn:active {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    header p {
+        color: white;
+        text-align: center;
+        font-style: italic;
+        font-size: 1em;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .btn:link {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:visited {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:hover {
+        background-color: #003049;
+        color: #DAA520;
+        border: 1px solid #DAA520;
+    }
+
+    .btn:active {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+    @media screen {
+
+        body {
+            background-color: #003049;
+        }
+
+        *:not(header, header p, body, html) {
+            display: none;
+        }
+
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
 @media print {
+
+    #extra_margin {
+        margin-top: 9em;
+    }
+
     header {
         display: none !important;
     }
@@ -227,4 +479,5 @@
             padding-bottom: 1em;
         }
 
-    }
+
+}

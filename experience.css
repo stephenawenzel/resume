@@ -1,4 +1,4 @@
-/*WORKFLOW ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
     1. BIG IDEA CONCEPT
     2. AUDIENCE TO TARGET
     3. RESEARCH
@@ -26,58 +26,79 @@
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-html::-webkit-scrollbar {
-    display: none;
-}
-
-html::-webkit-scrollbar-button {
-    display: none;
-}
-
-html::-webkit-scrollbar-thumb {
-    display: none;
-}
-
-html::-webkit-scrollbar-track {
-    display: none;
-}
-
-body {    
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 */
-    /* Currently not supported in Opera but will be soon */
-    -o-user-select: none;
-    user-select: none;
-    font-family: 'EB Garamond', serif;
-    background-color: #003049;
-}
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-
     html::-webkit-scrollbar {
         width: 10px;
         background: #003049;
     }
-    
+
     html::-webkit-scrollbar-button {
         display: none;
     }
-    
+
     html::-webkit-scrollbar-thumb {
         background:#E8B130;
         border-radius: 5px;
     }
-    
+
     html::-webkit-scrollbar-track {
         background: #003049;
     }
+
+    body {    
+        -webkit-user-select: none; /* Webkit */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10 */
+        /* Currently not supported in Opera but will be soon */
+        -o-user-select: none;
+        user-select: none;
+        font-family: 'EB Garamond', serif;
+    }
+
+    .btn {
+        height: 2.5em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        font-weight: 500;
+        border-radius: 15px;
+        border: none;
+        font-size: 1em;
+    }
+
+    .btn:link {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:visited {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #DAA520;
+        border: 1px solid white;
+    }
+
+    .btn:active {
+        background-color: #003049;
+        color: white;
+        border: 1px solid white;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    .btn {
+        height: 2em;
+    }
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
@@ -97,31 +118,31 @@ body {
 /*====================================================== MAIN CONTENT ===================================================================*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: #003049;
-    font-size: 1em;
-}
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: #003049;
+        font-size: 1em;
+    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-
+    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-    
+        
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-
+    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-
+    
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -131,87 +152,87 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     
-        .navbar {
-            position: relative;
-            color: white;
-            margin: 0;
-            padding: 0;
+.navbar {
+    position: relative;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse {
+    margin-left: 0;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5vh;
+}
+
+.active a { 
+    color: #E8B130 !important;
+}
+
+/*I determined how to customize the navbar toggler using the following two websites:
+    https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
+    and
+    https://github.com/yui/yuicompressor/issues/274
+*/
+          
+.custom-toggler .navbar-toggler {
+    position: relative;
+}
+
+#menu-button-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #003049 !important;
+    background-color: white;
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 5vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    background-color: white; 
+    padding: 0;
+    width: 100%;
+    border: solid white 0.1em;
+}
+
+    .nav-item {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        color: #003049;
+    }
+
+        .nav-item a {
+            color: #003049;
         }
-        
-        .navbar-collapse {
-            margin-left: 0;
-            background-color: white;
-            border-radius: 0 0 30px 30px;
-            z-index: 9;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 5vh;
+
+        .nav-item a:hover {
+            color: #E8B130;
         }
-        
-        .active a { 
-            color: #E8B130 !important;
-        }
-        
-        /*I determined how to customize the navbar toggler using the following two websites:
-            https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
-            and
-            https://github.com/yui/yuicompressor/issues/274
-        */
-                  
-        .custom-toggler .navbar-toggler {
-            position: relative;
-        }
-    
-        #menu-button-container {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-            position: relative;
-            margin: 0;
-            padding: 0;
-            color: #003049 !important;
-            background-color: white;
-        }
-        
-        #menu {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-            height: 5vh;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-    
-        .navbar-nav {
-            background-color: white; 
-            padding: 0;
-            width: 100%;
-            border: solid white 0.1em;
-        }
-        
-            .nav-item {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-items: center;
-                color: #003049;
-            }
-        
-                .nav-item a {
-                    color: #003049;
-                }
-        
-                .nav-item a:hover {
-                    color: #E8B130;
-                }
-        
-            .nav-link {
-              color: white;
-            }
+
+    .nav-link {
+      color: white;
+    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -219,23 +240,23 @@ header {
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-    #menu-button-container {
-        display: none;
-    }
+#menu-button-container {
+display: none;
+}
 
-    .navbar-nav {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-    }
-    
-    .navbar-collapse {
-        z-index: 9;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: initial;
-    }
+.navbar-nav {
+border-left: none;
+border-right: none;
+border-top: none;
+}
+
+.navbar-collapse {
+z-index: 9;
+margin: 0;
+padding: 0;
+position: relative;
+top: initial;
+}
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
@@ -243,23 +264,23 @@ header {
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
 
-    #menu-button-container {
-        display: none;
-    }
+#menu-button-container {
+display: none;
+}
 
-    .navbar-nav {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-    }
-    
-    .navbar-collapse {
-        z-index: 9;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: initial;
-    }   
+.navbar-nav {
+border-left: none;
+border-right: none;
+border-top: none;
+}
+
+.navbar-collapse {
+z-index: 9;
+margin: 0;
+padding: 0;
+position: relative;
+top: initial;
+}   
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -293,71 +314,134 @@ header {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
     main {
-        padding-top: 2em;
-        color: white;
-        height: 56em;
-        max-height: 90vh;
-    }
-    
-    #content {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
+        padding-top: 5vh;
+        background-color: #003049;
     }
 
-    .signature_title {        
-        min-height: 25vh;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-        .box p {
-            margin-bottom: 0 !important;
-        }
-    
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-        #headshot {
-            border-radius: 2%;
-            background-color:gainsboro;
-            width: 100%;
+        .experience {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
         }
 
-    #title {
-        letter-spacing: 0.5em;
-    }
+            .experience * {
+                color: #FFFFFF;
+                line-height: 1.6em;
+            }
 
+            .e-about {
+                margin: 3vh 0 3vh 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+            }
+
+                .e-titles {
+                    font-size: 2em;
+                    color: #DAA520;
+                }
+
+                .e-co {
+                    font-size: 1.2em;
+                    color: #FFFFFF;
+                }
+
+                .e-time {
+                    font-size: 1.1em;
+                    color: #FFFFFF;
+                }
+              
+                    .e-time i {
+                        font-size: 1.1em;
+                        color: #FFFFFF;
+                    }
+
+                .e-location {
+                    font-size: 1.1em;
+                    color: #FFFFFF;
+                }
+
+                .e-about ul {
+                    font-size: 1.1em;
+                }
+
+                .e-about ul li {
+                    margin: 2vh 0 2vh 0;
+                }
+
+        .image_and_link {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            margin: 3vh 0 3vh 0;
+        }
+
+        #unc {
+            border-radius: 0;
+        }
+
+        #ths {
+            border-radius: 0;
+        }
+
+        #cssc_pic {
+            background-color: white;
+            border-radius: 5%;
+        }
+
+        #kinesin {
+            height: 30vh;
+        }
+
+        img {
+            border-radius: 6%;
+        }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-
-    #headshot {
-        display: block;
-        max-width: 100%;
-        max-height: 60vh;
-        width: auto;
-        height: auto;
-    }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {       
+@media screen and (min-width: 768px) {
+
+    /*-------Experience----------------*/
     
-    #other {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
+                .experience * {
+                    line-height: 1.6em;
+                }
+    
+                    .e-titles {
+                        font-size: 2rem;
+                        line-height: 2.5em;
+                    }
+    
+                    .e-co {
+                        font-size: 1.3rem;
+                    }
+    
+                    .e-time {
+                        font-size: 1.3rem;
+                    }
+                  
+                        .e-time i {
+                            font-size: 1.3rem;
+                        }
+    
+                    .e-location {
+                        font-size: 1.3rem;
+                    }
+    
+                    .e-about ul {
+                        font-size: 1.1rem;
+                    }
+    
+        #kinesin {
+            height: 50vh;
+        }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
@@ -407,15 +491,6 @@ header {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-    #signature_stephen, #title {
-    animation-name: signature_stephen;
-    animation-duration: 4s;
-    }
-    
-    @keyframes signature_stephen {
-    from {opacity: 0}
-    to {opacity: 1}
-    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -435,5 +510,9 @@ header {
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
+@media print {
 
 }
