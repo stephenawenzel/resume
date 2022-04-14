@@ -63,18 +63,19 @@
         font-weight: 500;
         border-radius: 15px;
         border: none;
-        font-size: 1em;
+        font-size: 1.2em;
+        font-style: italic;
     }
 
     .btn:link {
-        background-color: #003049;
-        color: white;
+        background-color: white;
+        color: #003049;
         border: 1px solid white;
     }
 
     .btn:visited {
-        background-color: #003049;
-        color: white;
+        background-color: white;
+        color: #003049;
         border: 1px solid white;
     }
 
@@ -85,8 +86,8 @@
     }
 
     .btn:active {
-        background-color: #003049;
-        color: white;
+        background-color: white;
+        color: #003049;
         border: 1px solid white;
     }
 
@@ -126,6 +127,9 @@
         background-color: white;
         color: #003049;
         font-size: 1em;
+        position: fixed;
+        width: 100%;
+        z-index: 9;
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -240,23 +244,23 @@
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-#menu-button-container {
-display: none;
-}
+    #menu-button-container {
+        display: none;
+    }
 
-.navbar-nav {
-border-left: none;
-border-right: none;
-border-top: none;
-}
+    .navbar-nav {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
 
-.navbar-collapse {
-z-index: 9;
-margin: 0;
-padding: 0;
-position: relative;
-top: initial;
-}
+    .navbar-collapse {
+        z-index: 9;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: initial;
+    }
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
@@ -264,23 +268,23 @@ top: initial;
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
 
-#menu-button-container {
-display: none;
-}
+    #menu-button-container {
+        display: none;
+    }
 
-.navbar-nav {
-border-left: none;
-border-right: none;
-border-top: none;
-}
+    .navbar-nav {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
 
-.navbar-collapse {
-z-index: 9;
-margin: 0;
-padding: 0;
-position: relative;
-top: initial;
-}   
+    .navbar-collapse {
+        z-index: 9;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: initial;
+    }   
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -404,6 +408,17 @@ top: initial;
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
+    .e-about ul {
+        font-size: 1.1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .e-about ul li {
+        margin: 1vh 0 1vh 0;
+    }
+    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -433,10 +448,6 @@ top: initial;
     
                     .e-location {
                         font-size: 1.3rem;
-                    }
-    
-                    .e-about ul {
-                        font-size: 1.1rem;
                     }
     
         #kinesin {
