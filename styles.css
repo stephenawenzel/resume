@@ -88,14 +88,17 @@ header {
     align-items: center;
     background-color: white;
     color: #003049;
-    font-size: 1em;
+    font-size: 1.3em;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-
+    header {
+        font-size: 1em;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -128,7 +131,6 @@ header {
         .navbar-collapse {
             margin-left: 0;
             background-color: white;
-            border-radius: 0 0 30px 30px;
             margin: 0;
             padding: 0;
             position: absolute;
@@ -190,6 +192,11 @@ header {
         
                 .nav-item a {
                     color: #003049;
+                    height: 10vh;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-content: center;
                 }
         
                 .nav-item a:hover {
@@ -202,6 +209,13 @@ header {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+    .nav-item a {
+        height: initial;
+        display: initial;
+        flex-flow: initial;
+        justify-content: initial;
+        align-content: initial;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -320,7 +334,12 @@ header {
         }
 
     #title {
-        letter-spacing: 0.5em;
+        letter-spacing: 0.3em;
+    }
+
+    #updated {
+        letter-spacing: 0.1em;
+        color: hsla(255, 100%, 100%, 0.3);
     }
 
 

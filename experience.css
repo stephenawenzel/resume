@@ -119,22 +119,24 @@
 /*====================================================== MAIN CONTENT ===================================================================*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-    header {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        color: #003049;
-        font-size: 1em;
-        position: fixed;
-        width: 100%;
-        z-index: 9;
-    }
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #003049;
+    font-size: 1.3em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+    header {
+        font-size: 1em;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -161,13 +163,12 @@
     color: white;
     margin: 0;
     padding: 0;
+    z-index: 9;
 }
 
 .navbar-collapse {
     margin-left: 0;
     background-color: white;
-    border-radius: 0 0 30px 30px;
-    z-index: 9;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -209,6 +210,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    cursor:pointer;
 }
 
 .navbar-nav {
@@ -228,6 +230,11 @@
 
         .nav-item a {
             color: #003049;
+            height: 10vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
         }
 
         .nav-item a:hover {
@@ -240,27 +247,33 @@
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+.nav-item a {
+height: initial;
+display: initial;
+flex-flow: initial;
+justify-content: initial;
+align-content: initial;
+}
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-    #menu-button-container {
-        display: none;
-    }
+#menu-button-container {
+display: none;
+}
 
-    .navbar-nav {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-    }
+.navbar-nav {
+border-left: none;
+border-right: none;
+border-top: none;
+}
 
-    .navbar-collapse {
-        z-index: 9;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: initial;
-    }
+.navbar-collapse {
+margin: 0;
+padding: 0;
+position: relative;
+top: initial;
+}
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
@@ -268,23 +281,23 @@
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
 
-    #menu-button-container {
-        display: none;
-    }
+#menu-button-container {
+display: none;
+}
 
-    .navbar-nav {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-    }
+.navbar-nav {
+border-left: none;
+border-right: none;
+border-top: none;
+}
 
-    .navbar-collapse {
-        z-index: 9;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: initial;
-    }   
+.navbar-collapse {
+z-index: 9;
+margin: 0;
+padding: 0;
+position: relative;
+top: initial;
+}   
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
