@@ -1,105 +1,59 @@
-/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-    1. BIG IDEA CONCEPT
-    2. AUDIENCE TO TARGET
-    3. RESEARCH
-    4. UI DESIGN IDEAS
-        > COLOR PALETTE & TYPOGRAPHY
-            #003049 #E8B130 #FFFFFF
-            > COLOR BLINDNESS
-        > MOBILE-FIRST DESIGN
-    5. DESIGN PROCESS
-        A. GENERAL SETTINGS
-            a. MOBILE -> ENORMOUS
-        B. HEADER
-            a. MOBILE -> ENORMOUS
-        C. FOOTER
-            a. MOBILE -> ENORMOUS
-        D. MAIN
-            a. MOBILE -> ENORMOUS
-    6. SHOW PEOPLE. TAKE NOTES.
-    7. IMPLEMENT WHAT YOU LEARNED
-    8. ADD NEW IDEAS
-?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
-
-
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-    html::-webkit-scrollbar {
-        width: 10px;
-        background: #003049;
-    }
 
-    html::-webkit-scrollbar-button {
-        display: none;
-    }
+body {    
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10 */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'EB Garamond', serif;
+    background-color: #67AAF9;
+}
+     
+.btn {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
+}
 
-    html::-webkit-scrollbar-thumb {
-        background:#E8B130;
-        border-radius: 5px;
-    }
-
-    html::-webkit-scrollbar-track {
-        background: #003049;
-    }
-
-    body {    
-        -webkit-user-select: none; /* Webkit */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE 10 */
-        /* Currently not supported in Opera but will be soon */
-        -o-user-select: none;
-        user-select: none;
-        font-family: 'EB Garamond', serif;
-    }
-
-    .btn {
-        height: 2.5em;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        font-weight: 500;
-        border-radius: 15px;
-        border: none;
-        font-size: 1.2em;
-        font-style: italic;
-    }
-
-    .btn:link {
-        background-color: white;
-        color: #003049;
-        border: 1px solid white;
-    }
-
-    .btn:visited {
-        background-color: white;
-        color: #003049;
-        border: 1px solid white;
-    }
-
-    .btn:hover {
-        background-color: white;
-        color: #DAA520;
-        border: 1px solid white;
-    }
-
-    .btn:active {
-        background-color: white;
-        color: #003049;
-        border: 1px solid white;
-    }
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: hsla(255, 100%, 0%, 0.1);
+    color: black;
+    border-bottom: black solid 0.1em;
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    .btn {
-        height: 2em;
-    }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
+
+    html::-webkit-scrollbar {
+        width: 10px;
+        background: #67AAF9;
+    }
+    
+    html::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background:#E8B130;
+        border-radius: 5px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background: #67AAF9;
+    }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
@@ -125,7 +79,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    color: #003049;
+    color: #67AAF9;
     font-size: 1.3em;
     position: fixed;
     width: 100%;
@@ -140,15 +94,19 @@ header {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-        
+    
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
     
+    header {
+        font-size: 1.3em;
+    }
+
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -158,122 +116,122 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     
-.navbar {
-    position: relative;
-    color: white;
-    margin: 0;
-    padding: 0;
-    z-index: 9;
-}
-
-.navbar-collapse {
-    margin-left: 0;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 5vh;
-}
-
-.active a { 
-    color: #E8B130 !important;
-}
-
-/*I determined how to customize the navbar toggler using the following two websites:
-    https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
-    and
-    https://github.com/yui/yuicompressor/issues/274
-*/
-          
-.custom-toggler .navbar-toggler {
-    position: relative;
-}
-
-#menu-button-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    color: #003049 !important;
-    background-color: white;
-}
-
-#menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    height: 5vh;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    cursor:pointer;
-}
-
-.navbar-nav {
-    background-color: white; 
-    padding: 0;
-    width: 100%;
-    border: solid white 0.1em;
-}
-
-    .nav-item {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        color: #003049;
-    }
-
-        .nav-item a {
-            color: #003049;
-            height: 10vh;
+        .navbar {
+            position: relative;
+            color: white;
+            margin: 0;
+            padding: 0;
+            z-index: 9;
+        }
+        
+        .navbar-collapse {
+            margin-left: 0;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 5vh;
+        }
+        
+        .active a { 
+            color: #E8B130 !important;
+        }
+        
+        /*I determined how to customize the navbar toggler using the following two websites:
+            https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
+            and
+            https://github.com/yui/yuicompressor/issues/274
+        */
+                  
+        .custom-toggler .navbar-toggler {
+            position: relative;
+        }
+    
+        #menu-button-container {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-content: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            color: #67AAF9 !important;
+            background-color: white;
         }
-
-        .nav-item a:hover {
-            color: #E8B130;
+        
+        #menu {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            height: 5vh;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            cursor:pointer;
         }
-
-    .nav-link {
-      color: white;
-    }
+    
+        .navbar-nav {
+            background-color: #494850;
+            padding: 0;
+            width: 100%;
+            border: solid white 0.1em;
+        }
+        
+            .nav-item {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                color: #003049;
+            }
+        
+                .nav-item a {
+                    color: white;
+                    height: 10vh;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-content: center;
+                }
+        
+                .nav-item a:hover {
+                    color: #E8B130;
+                }
+        
+            .nav-link {
+              color: white;
+            }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-.nav-item a {
-height: initial;
-display: initial;
-flex-flow: initial;
-justify-content: initial;
-align-content: initial;
-}
+    .nav-item a {
+        height: initial;
+        display: initial;
+        flex-flow: initial;
+        justify-content: initial;
+        align-content: initial;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-#menu-button-container {
-display: none;
-}
+    #menu-button-container {
+        display: none;
+    }
 
-.navbar-nav {
-border-left: none;
-border-right: none;
-border-top: none;
-}
-
-.navbar-collapse {
-margin: 0;
-padding: 0;
-position: relative;
-top: initial;
-}
+    .navbar-nav {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+    
+    .navbar-collapse {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: initial;
+    }
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
@@ -281,23 +239,23 @@ top: initial;
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
 
-#menu-button-container {
-display: none;
-}
+    #menu-button-container {
+        display: none;
+    }
 
-.navbar-nav {
-border-left: none;
-border-right: none;
-border-top: none;
-}
-
-.navbar-collapse {
-z-index: 9;
-margin: 0;
-padding: 0;
-position: relative;
-top: initial;
-}   
+    .navbar-nav {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+    
+    .navbar-collapse {
+        z-index: 9;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: initial;
+    }   
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -334,7 +292,7 @@ top: initial;
 
     main {
         padding-top: 5vh;
-        background-color: #003049;
+        background-color: #67AAF9;
     }
 
         .experience {
@@ -349,44 +307,59 @@ top: initial;
             }
 
             .e-about {
-                margin: 3vh 0 3vh 0;
+                margin: 10vh 0 10vh 0;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 align-content: center;
+                background-color: hsla(255, 100%, 0%,0.7);
+                padding: 0;
+                border-radius: 10px;
             }
 
                 .e-titles {
-                    font-size: 2em;
-                    color: #DAA520;
+                    font-size: 1.5em;
+                    color: white;
+                    background-color: #494850;
+                    border-top: #e8b130 solid 0.1em;
+                    border-bottom: #e8b130 solid 0.1em;
+                    text-align: center;
                 }
 
                 .e-co {
+                    margin-top: 5vh;
                     font-size: 1.2em;
                     color: #FFFFFF;
+                    text-align: center;
                 }
 
                 .e-time {
                     font-size: 1.1em;
                     color: #FFFFFF;
+                    text-align: center;
                 }
               
                     .e-time i {
                         font-size: 1.1em;
                         color: #FFFFFF;
+                        text-align: center;
                     }
 
                 .e-location {
                     font-size: 1.1em;
                     color: #FFFFFF;
+                    text-align: center;
                 }
 
                 .e-about ul {
                     font-size: 1.1em;
+                    padding: 0;
                 }
 
                 .e-about ul li {
-                    margin: 2vh 0 2vh 0;
+                    margin: 5vh 0 5vh 0;
+                    list-style-position: inside;
+                    list-style-type: none;
                 }
 
         .image_and_link {
@@ -394,15 +367,42 @@ top: initial;
             flex-flow: row wrap;
             justify-content: center;
             align-content: center;
-            margin: 3vh 0 3vh 0;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+            .image_and_link img {
+                margin: 1em;
+            }
+
+            .image_and_link iframe {
+                margin: 1em;
+            }
+
+        #scc {
+            background-color: white;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        #hcc {
+            background-color: #22311d;
+            padding: 1em;
+            border-radius: 10px;
         }
 
         #unc {
-            border-radius: 0;
+            border-radius: 10px;
+            background-color: white;
+            padding: 1em;
         }
 
         #ths {
-            border-radius: 0;
+            border-radius: 10px;
+            background-color: black;
+            padding: 1em;
         }
 
         #cssc_pic {
@@ -412,10 +412,6 @@ top: initial;
 
         #kinesin {
             height: 30vh;
-        }
-
-        img {
-            border-radius: 6%;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/

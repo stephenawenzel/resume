@@ -1,28 +1,3 @@
-/*WORKFLOW ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-    1. BIG IDEA CONCEPT
-    2. AUDIENCE TO TARGET
-    3. RESEARCH
-    4. UI DESIGN IDEAS
-        > COLOR PALETTE & TYPOGRAPHY
-            #003049 #E8B130 #FFFFFF
-            > COLOR BLINDNESS
-        > MOBILE-FIRST DESIGN
-    5. DESIGN PROCESS
-        A. GENERAL SETTINGS
-            a. MOBILE -> ENORMOUS
-        B. HEADER
-            a. MOBILE -> ENORMOUS
-        C. FOOTER
-            a. MOBILE -> ENORMOUS
-        D. MAIN
-            a. MOBILE -> ENORMOUS
-    6. SHOW PEOPLE. TAKE NOTES.
-    7. IMPLEMENT WHAT YOU LEARNED
-    8. ADD NEW IDEAS
-?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
-
-
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
@@ -36,6 +11,23 @@ body {
     user-select: none;
     font-family: 'EB Garamond', serif;
     background-color: #67AAF9;
+}
+     
+.btn {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: hsla(255, 100%, 0%, 0.1);
+    color: black;
+    border-bottom: black solid 0.1em;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -297,90 +289,182 @@ header {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
     main {
-        padding-top: 3em;
-        color: white;
-        height: 56em;
-        max-height: 90vh;
-    }
-    
-    #content {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
+        padding-top: 5vh;
+        background-color: #67AAF9;
     }
 
-    .signature_title {        
-        min-height: 25vh;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-        .box p {
-            margin-bottom: 0 !important;
-        }
-    
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 30vh;
-    }
-
-        #headshot {
-            border-radius: 2%;
-            background-color:white;
-            height: 100%;
+        .experience {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
         }
 
-    #title {
-        letter-spacing: 0.3em;
-    }
+            .experience * {
+                color: #FFFFFF;
+                line-height: 1.6em;
+            }
 
-    #updated {
-        letter-spacing: 0.1em;
-        color: hsla(255, 100%, 100%, 0.3);
-    }
+            .e-about {
+                margin: 3vh 0 3vh 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                padding: 0;
+                border-radius: 10px;
+            }
 
+                .e-titles {
+                    font-size: 1.5em;
+                    color: white;
+                    background-color: #494850;
+                    border-top: #e8b130 solid 0.1em;
+                    border-bottom: #e8b130 solid 0.1em;
+                    text-align: center;
+                }
+
+                .e-co {
+                    margin-top: 5vh;
+                    font-size: 1.2em;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+
+                .e-time {
+                    font-size: 1.1em;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+              
+                    .e-time i {
+                        font-size: 1.1em;
+                        color: #FFFFFF;
+                        text-align: center;
+                    }
+
+                .e-location {
+                    font-size: 1.1em;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+
+                .e-about ul {
+                    font-size: 1.1em;
+                    padding: 0;
+                }
+
+                .e-about ul li {
+                    margin: 5vh 0 5vh 0;
+                    list-style-position: inside;
+                    list-style-type: none;
+                }
+
+        .image_and_link {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+            .image_and_link img {
+                margin: 1em;
+            }
+
+            .image_and_link iframe {
+                margin: 1em;
+            }
+
+        #scc {
+            background-color: white;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        #hcc {
+            background-color: #22311d;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        #unc {
+            border-radius: 10px;
+            background-color: white;
+            padding: 1em;
+        }
+
+        #ths {
+            border-radius: 10px;
+            background-color: black;
+            padding: 1em;
+        }
+
+        #cssc_pic {
+            background-color: white;
+            border-radius: 5%;
+        }
+
+        #kinesin {
+            height: 30vh;
+        }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
-    .headshot_box {
+    .e-about ul {
+        font-size: 1.1rem;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 50vh;
+        justify-content: flex-end;
+    }
+
+    .e-about ul li {
+        margin: 1vh 0 1vh 0;
     }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {       
+@media screen and (min-width: 768px) {
+
+    /*-------Experience----------------*/
     
-    #other {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
+                .experience * {
+                    line-height: 1.6em;
+                }
+    
+                    .e-titles {
+                        font-size: 2rem;
+                        line-height: 2.5em;
+                    }
+    
+                    .e-co {
+                        font-size: 1.3rem;
+                    }
+    
+                    .e-time {
+                        font-size: 1.3rem;
+                    }
+                  
+                        .e-time i {
+                            font-size: 1.3rem;
+                        }
+    
+                    .e-location {
+                        font-size: 1.3rem;
+                    }
+    
+        #kinesin {
+            height: 50vh;
+        }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 70vh;
-    }
-    
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
@@ -426,31 +510,6 @@ header {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-    #signature_stephen, #title {
-    animation-name: signature_stephen;
-    animation-duration: 4s;
-    }
-    
-    @keyframes signature_stephen {
-    from {opacity: 0}
-    to {opacity: 1}
-    }
-
-    html::-webkit-scrollbar {
-        display: none;
-    }
-    
-    html::-webkit-scrollbar-button {
-        display: none;
-    }
-    
-    html::-webkit-scrollbar-thumb {
-        display: none;
-    }
-    
-    html::-webkit-scrollbar-track {
-        display: none;
-    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -470,5 +529,9 @@ header {
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
+@media print {
 
 }
