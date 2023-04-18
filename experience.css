@@ -224,6 +224,10 @@ header {
         border-left: none;
         border-right: none;
         border-top: none;
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        }
     }
     
     .navbar-collapse {
@@ -360,6 +364,8 @@ header {
                     margin: 5vh 0 5vh 0;
                     list-style-position: inside;
                     list-style-type: none;
+                    border-left: solid 2px #e8b130;
+                    border-right: solid 3px #E8B130;
                 }
 
         .image_and_link {
@@ -466,7 +472,9 @@ header {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
+    .e-about ul li {
+        text-align: center;
+    }    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {

@@ -212,6 +212,12 @@ header {
         justify-content: initial;
         align-content: initial;
     }
+    
+    .navbar-nav {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -433,33 +439,39 @@ header {
 
     /*-------Experience----------------*/
     
-                .experience * {
-                    line-height: 1.6em;
+        .experience * {
+            line-height: 1.6em;
+        }
+
+            .e-titles {
+                font-size: 2rem;
+                line-height: 2.5em;
+            }
+
+            .e-co {
+                font-size: 1.3rem;
+            }
+
+            .e-time {
+                font-size: 1.3rem;
+            }
+            
+                .e-time i {
+                    font-size: 1.3rem;
                 }
-    
-                    .e-titles {
-                        font-size: 2rem;
-                        line-height: 2.5em;
-                    }
-    
-                    .e-co {
-                        font-size: 1.3rem;
-                    }
-    
-                    .e-time {
-                        font-size: 1.3rem;
-                    }
-                  
-                        .e-time i {
-                            font-size: 1.3rem;
-                        }
-    
-                    .e-location {
-                        font-size: 1.3rem;
+
+            .e-location {
+                font-size: 1.3rem;
                     }
     
         #kinesin {
             height: 50vh;
+        }
+
+    /*-------Education---------*/
+
+        #unc {
+            margin-top: 5vh; 
         }
         
 }

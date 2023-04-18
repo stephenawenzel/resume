@@ -220,6 +220,12 @@ header {
         justify-content: initial;
         align-content: initial;
     }
+    
+    .navbar-nav {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
