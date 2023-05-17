@@ -333,7 +333,7 @@
 
     .divider {
         height: 1px;
-        background-color: lightgray !important;
+        background-color: #8e8e8e !important;
         margin-top: 0.5vh;
         margin-bottom: 0.5vh;
     }
@@ -375,17 +375,17 @@
         }
 
         #email {
-            color: gray;
+            color: #2f2f2f;
             text-decoration: none;
         }
 
         #location {
-            color: gray;
+            color: #2f2f2f;
             text-decoration: none;
         }
 
         #phone {
-            color: gray;
+            color: #2f2f2f;
             text-decoration: none;
         }
 
@@ -406,7 +406,7 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
-            border-top: 2px solid gray;
+            border-top: 2px solid #8e8e8e;
             padding-top: 1em;
             padding-bottom: 1em;
         }
@@ -415,7 +415,7 @@
                 padding: 0 0 0 0;
                 margin: 0 0 0 0;
                 color: black;
-                line-height: 1.1em;
+                line-height: 1.5em;
             }
 
             .e-about {
@@ -423,7 +423,7 @@
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
             }
 
                 .e-titles {
@@ -432,15 +432,16 @@
 
                 .e-co {
                     font-size: 12pt;
-                    color: gray;
+                    color: #2f2f2f;
                 }
 
                 .e-time {
-                    color: gray;
+                    color: #2f2f2f;
+                    text-align: start;
                 }
 
                 .e-location {
-                    color: gray;
+                    color: #2f2f2f;
                     padding-bottom: 0.5vh;
                 }
 
@@ -466,12 +467,12 @@
         }
 
         .skills {
-            border-bottom: 2px solid gray;
+            border-bottom: 2px solid #8e8e8e;
             padding-bottom: 1em;
         }
 
         .certs {
-            border-top: 2px solid gray;
+            border-top: 2px solid #8e8e8e;
             padding-top: 1em;
         }
 
