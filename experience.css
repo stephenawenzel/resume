@@ -3,18 +3,11 @@
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 body {    
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 */
-    /* Currently not supported in Opera but will be soon */
-    -o-user-select: none;
-    user-select: none;
     font-family: 'EB Garamond', serif;
     background-color: #67AAF9;
 }
      
 .btn {
-    height: 2em;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -25,9 +18,8 @@ body {
 }
 
 .btn:link, .btn:visited, .btn:hover, .btn:active {
-    background-color: hsla(255, 100%, 0%, 0.1);
-    color: black;
-    border-bottom: black solid 0.1em;
+    background-color: #003049;
+    color: white;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -39,7 +31,7 @@ body {
 
     html::-webkit-scrollbar {
         width: 10px;
-        background: #67AAF9;
+        background: white;
     }
     
     html::-webkit-scrollbar-button {
@@ -52,7 +44,7 @@ body {
     }
     
     html::-webkit-scrollbar-track {
-        background: #67AAF9;
+        background: white;
     }
         
 }
@@ -227,9 +219,8 @@ header {
         display: flex; 
         flex-flow: row wrap;
         justify-content: center;
-        }
     }
-    
+        
     .navbar-collapse {
         margin: 0;
         padding: 0;
@@ -302,7 +293,7 @@ header {
         .experience {
             display: flex;
             flex-flow: row wrap;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
             .experience * {
@@ -311,48 +302,46 @@ header {
             }
 
             .e-about {
-                margin: 10vh 0 10vh 0;
+                margin: 10vh 0 0 0;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 align-content: center;
                 background-color: hsla(255, 100%, 0%,0.7);
                 padding: 0;
-                border-radius: 10px;
+                border-radius: 10px 10px 0 0;
             }
 
                 .e-titles {
-                    font-size: 1.5em;
+                    font-size: 2em;
                     color: white;
                     background-color: #494850;
                     border-top: #e8b130 solid 0.1em;
                     border-bottom: #e8b130 solid 0.1em;
                     text-align: center;
+                    padding: 1vh;
                 }
 
                 .e-co {
                     margin-top: 5vh;
-                    font-size: 1.2em;
+                    margin-bottom: 5vh;
+                    font-size: 1.7em;
                     color: #FFFFFF;
-                    text-align: center;
                 }
 
                 .e-time {
                     font-size: 1.1em;
-                    color: #FFFFFF;
-                    text-align: center;
+                    color: #e8b130;
                 }
               
                     .e-time i {
                         font-size: 1.1em;
-                        color: #FFFFFF;
-                        text-align: center;
+                        color: #e8b130;
                     }
 
                 .e-location {
                     font-size: 1.1em;
-                    color: #FFFFFF;
-                    text-align: center;
+                    color: #e8b130;
                 }
 
                 .e-about ul {
@@ -365,7 +354,6 @@ header {
                     list-style-position: inside;
                     list-style-type: none;
                     border-left: solid 2px #e8b130;
-                    border-right: solid 3px #E8B130;
                 }
 
         .image_and_link {
@@ -376,7 +364,7 @@ header {
             background-color: white;
             padding: 0;
             margin: 0;
-            border-radius: 10px;
+            border-radius: 0 0 10px 10px;
         }
 
             .image_and_link img {
@@ -447,22 +435,27 @@ header {
                     .e-titles {
                         font-size: 2rem;
                         line-height: 2.5em;
+                        text-align: center;
                     }
     
                     .e-co {
-                        font-size: 1.3rem;
+                        font-size: 1.7rem;
+                        text-align: center;
                     }
     
                     .e-time {
                         font-size: 1.3rem;
+                        text-align: center;
                     }
                   
                         .e-time i {
                             font-size: 1.3rem;
+                            text-align: center;
                         }
     
                     .e-location {
                         font-size: 1.3rem;
+                        text-align: center;
                     }
     
         #kinesin {
@@ -472,9 +465,7 @@ header {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    .e-about ul li {
-        text-align: center;
-    }    
+    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
