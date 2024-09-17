@@ -71,7 +71,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    color: #67AAF9;
+    color: black;
     font-size: 1.3em;
     position: fixed;
     width: 100%;
@@ -288,6 +288,9 @@ header {
     main {
         padding-top: 5vh;
         background-color: #67AAF9;
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
     }
 
         .experience {
@@ -354,6 +357,7 @@ header {
                     list-style-position: inside;
                     list-style-type: none;
                     border-left: solid 2px #e8b130;
+                    color: white;
                 }
 
         .image_and_link {
