@@ -326,13 +326,13 @@
     main {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .divider {
         height: 1px;
-        background-color: #8e8e8e !important;
+        background-color: #e8b130 !important;
         margin-top: 0.5vh;
         margin-bottom: 0.5vh;
     }
@@ -355,16 +355,36 @@
 
     /*-------Header----------------*/
 
+    #temp_header {
+        border: solid 1px #67AAF9;
+    }
+
     .header-content {
         display: flex;
         flex-flow: row wrap;
-        justify-items: center;
-        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
         text-decoration: none;
+        padding: 0.5em;
+        height: 18vh;
+        background-color: #67AAF9;
     }
 
+        #header_info_box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-around;
+        }
+
+        #header_img {
+            max-height: 16vh;
+            background-color: white;
+            border-radius: 100%;
+        }
+
         .header-content * {
-            color: black;
+            color: white !important;
             line-height: 1em;
         }
 
@@ -388,16 +408,6 @@
             text-decoration: none;
         }
 
-        #website_banner {
-            text-decoration: none;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-
-        #website_banner span {
-            color: blue;
-        }
-
         /*-------Experience----------------*/
 
         .experience {
@@ -405,7 +415,6 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
-            border-top: 2px solid #8e8e8e;
             padding-top: 0.5em;
             padding-bottom: 0.5em;
         }
@@ -448,48 +457,68 @@
                     padding: 0 0 0 2vw;
                 }
 
-        .skills p {
-            line-height: 1.1em;
-            font-size: 12pt;
+            .job {
+                border-left: solid 1px #e8b130;
+                padding-left: 0.5em;
+            }
+
+        #others {
+            border: 2px solid #67AAF9;
+            padding: 0 0 0.5em 0;
         }
 
-        .btn {
-            height: 2em;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
-            margin: 3vh 0 0 0;
-            font-weight: 500;
-            border-radius: 15px;
-            border: none;
-        }
+            #others h2 {
+                background-color: #67AAF9;
+                padding-left: 1em;
+                color: white;
+            }
 
-        .skills {
-            border-bottom: 2px solid #8e8e8e;
-            padding-bottom: 1em;
-        }
+            .skills p {
+                line-height: 1.1em;
+                font-size: 12pt;
+            }
 
-        .certs {
-            border-top: 2px solid #8e8e8e;
-            padding-top: 1em;
-        }
+            .btn {
+                height: 2em;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                margin: 3vh 0 0 0;
+                font-weight: 500;
+                border-radius: 15px;
+                border: none;
+            }
 
-        .act-border {
-            padding-bottom: 1em;
-        }
+            .skills {
+                border-bottom: 2px solid #e8b130;
+                padding-bottom: 1em;
+            }
 
-        .activity {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: flex-start;
-            padding-left: 5px;
-            padding-right: 5px;
-            text-align: center;
-        }
+            .certifications {
+                margin-top: 1em;
+            }
 
-        .activity h4, .activity p {
-            text-align: center;
-        }
+                .cert {
+                    margin-top: 1em;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    text-align: center;
+                }
+
+            .activity {
+                margin-top: 1em;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-align: center;
+            }
+
+            .activity h4, .activity p {
+                text-align: center;
+            }
+
+            #education {
+                height: 18vh;
+                border: none;
+            }
 }

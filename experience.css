@@ -286,7 +286,7 @@ header {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
     main {
-        padding-top: 5vh;
+        padding-top: 1em;
         background-color: #67AAF9;
         display: flex; 
         flex-flow: row wrap;
@@ -305,7 +305,7 @@ header {
             }
 
             .e-about {
-                margin: 10vh 0 0 0;
+                margin: 8vh 0 0 0;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
@@ -330,11 +330,13 @@ header {
                     margin-bottom: 5vh;
                     font-size: 1.7em;
                     color: #FFFFFF;
+                    text-align: center;
                 }
 
                 .e-time {
                     font-size: 1.1em;
                     color: #e8b130;
+                    text-align: center;
                 }
               
                     .e-time i {
@@ -345,6 +347,7 @@ header {
                 .e-location {
                     font-size: 1.1em;
                     color: #e8b130;
+                    text-align: center;
                 }
 
                 .e-about ul {
@@ -353,11 +356,13 @@ header {
                 }
 
                 .e-about ul li {
-                    margin: 5vh 0 5vh 0;
+                    margin: 1em 0 1em 0;
+                    padding: 1em;
                     list-style-position: inside;
                     list-style-type: none;
-                    border-left: solid 2px #e8b130;
+                    border-left: solid 0.5em #e8b130;
                     color: white;
+                    background-color: hsla(255, 100%, 0%,0.1);
                 }
 
         .image_and_link {
