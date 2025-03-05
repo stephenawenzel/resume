@@ -1,28 +1,3 @@
-/*WORKFLOW ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-    1. BIG IDEA CONCEPT
-    2. AUDIENCE TO TARGET
-    3. RESEARCH
-    4. UI DESIGN IDEAS
-        > COLOR PALETTE & TYPOGRAPHY
-            #003049 #E8B130 #FFFFFF
-            > COLOR BLINDNESS
-        > MOBILE-FIRST DESIGN
-    5. DESIGN PROCESS
-        A. GENERAL SETTINGS
-            a. MOBILE -> ENORMOUS
-        B. HEADER
-            a. MOBILE -> ENORMOUS
-        C. FOOTER
-            a. MOBILE -> ENORMOUS
-        D. MAIN
-            a. MOBILE -> ENORMOUS
-    6. SHOW PEOPLE. TAKE NOTES.
-    7. IMPLEMENT WHAT YOU LEARNED
-    8. ADD NEW IDEAS
-?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
-
-
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
@@ -37,17 +12,30 @@ body {
     font-family: 'EB Garamond', serif;
     background-color: #67AAF9;
 }
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
+     
+.btn {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
 }
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
     html::-webkit-scrollbar {
-        width: 10px;
-        background: #67AAF9;
+        width: 1em;
+        background: white;
     }
     
     html::-webkit-scrollbar-button {
@@ -60,21 +48,9 @@ body {
     }
     
     html::-webkit-scrollbar-track {
-        background: #67AAF9;
+        background: white;
     }
         
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -92,34 +68,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-size: 1em;
 }
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    header {
-        font-size: 1em;
-    }
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-    
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-    header {
-        font-size: 1.3em;
-    }
-
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
 /*====================================================== NAVIGATION PANE ================================================================*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
@@ -144,12 +95,6 @@ header {
         .active a { 
             color: #E8B130 !important;
         }
-        
-        /*I determined how to customize the navbar toggler using the following two websites:
-            https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
-            and
-            https://github.com/yui/yuicompressor/issues/274
-        */
                   
         .custom-toggler .navbar-toggler {
             position: relative;
@@ -201,6 +146,7 @@ header {
                     flex-flow: row wrap;
                     justify-content: center;
                     align-content: center;
+                    font-size: 1.5em;
                 }
         
                 .nav-item a:hover {
@@ -246,10 +192,22 @@ header {
         position: relative;
         top: initial;
     }
+
+    .navbar-nav {
+        background-color: #494850;
+        height: 4em;
+        border-bottom: solid #e8b130 0.1em;
+    }
+    
+        .nav-item {
+            max-width: 18ch;
+        }
+
+            .nav-item a {
+                font-size: 1em;
+            }
 }
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-}
+
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
 
@@ -271,34 +229,6 @@ header {
         top: initial;
     }   
 }
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-}
-/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
-
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
@@ -366,31 +296,27 @@ header {
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {       
-    
-    #other {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (min-width: 768px) {
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 70vh;
+
+    #headshot {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
-    
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
+
+    #headshot {
+        width: initial;
+        height: 100%;
+        object-fit: contain;
+    }
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
