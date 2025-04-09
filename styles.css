@@ -234,17 +234,17 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     main {
-        padding-top: 3em;
+        padding-top: 9em;
         color: white;
         height: 56em;
-        max-height: 90vh;
+        max-height: 70vh;
     }
     
     #content {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-content: center;
+        align-content: space-around;
     }
 
     .signature_title {        
@@ -265,12 +265,14 @@ header {
         justify-content: center;
         align-content: center;
         height: 30vh;
+        margin-bottom: 3em;
     }
 
         #headshot {
             border-radius: 2%;
             background-color:white;
             height: 100%;
+            box-shadow: 0.0 0.5em 1em #494850;
         }
 
     #title {
@@ -285,13 +287,19 @@ header {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+
+    main {
+        padding-top: 3em;
+        max-height: 90vh;
+    }
     
     .headshot_box {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        height: 50vh;
+        height: 65vh;
+        margin-bottom: 0;
     }
     
 }

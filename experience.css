@@ -246,6 +246,7 @@ main {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        padding: 0;
     }
 
         .experience * {
@@ -262,13 +263,14 @@ main {
             color: white;
             background-color: #494850;
             text-align: center;
-            font-size: 1.5em;
-            border: solid #e8b130 0.5em;
+            font-size: 1.2em;
+            margin: 3em;
+            border: solid white 0.5em;
+            box-shadow: 0.0 0.5em 1em #494850;
         }
 
             .e-titles {
-                margin: 0 0 0.5em 0;
-                padding: 1em 0;
+                padding: 1em 0.5em;
                 background-color: white;
                 border-bottom: solid 0.1em white;
                 color: black;
@@ -277,23 +279,23 @@ main {
             .e-co {
                 font-size: 1em;
                 margin: 0;
-                padding: 0.2em 0;
+                padding: 0.2em 0.1em;
             }
 
             .e-time {
                 font-size: 1em;
                 margin: 0;
-                padding: 0.2em 0;
+                padding: 0.2em 0.1em;
             }
 
             .e-location {
                 font-size: 1em;
                 margin: 0;
-                padding: 0.2em 0;
+                padding: 0.2em 0.1em;
             }
 
         .e-about {
-            margin: 0 0 1em 0;
+            margin: 0;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
@@ -305,16 +307,18 @@ main {
             .e-about ul {
                 font-size: 1.1em;
                 padding: 0;
+                border-top: white solid 0.1em;
+                border-bottom: white solid 0.1em;
             }
 
             .e-about ul li {
-                margin: 1em 0 1em 0;
-                padding: 1em;
+                padding: 2em 1em;
                 list-style-position: inside;
                 list-style-type: none;
-                border-left: dashed 0.5ch #e8b130;
+                border-top: white solid 0.1em;
+                border-bottom: white solid 0.1em;
                 color: white;
-                background-color: hsla(255, 100%, 0%,0.3);
+                background-color: #494850;
             }
 
     .image_and_link {
@@ -323,11 +327,11 @@ main {
         justify-content: center;
         align-content: center;
         padding: 0;
-        margin: 1em 0 0 0;
+        margin: 0;
     }
 
         .image_and_link img {
-            margin: 1em 0;
+            padding: 1em 0;
         }
 
     #duke_eye_center {
@@ -340,6 +344,7 @@ main {
     }
 
     .wcent {
+        background-color: white;
         padding: 0;
     }
 
@@ -359,7 +364,8 @@ main {
 
     #orgopm {
         background-color: white;
-        padding: 0;
+        aspect-ratio: 3 / 2;
+        padding: 0.5em;
     }
 
     #cssc_pic {

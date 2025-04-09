@@ -279,15 +279,16 @@ header {
                     color: white;
                     font-weight: bold;
                     font-size: 1em;
-                    border: solid 0.2em white;
                     line-height: 1.6em;
                     display: block;
                     width: 55ch;
+                    padding-bottom: 0.2em;
                 }
 
                     h3 span {
                         border-top: solid white 0.1em;
-                        display: inline-block;
+                        padding-top: 0.2em;
+                        font-style: italic;
                     }
 
             .e-about img {
@@ -298,18 +299,11 @@ header {
                 margin-bottom: 1em;
                 padding: 1em;
                 background-color: white;
-                border-top: #494850 double 0.5em;
-                border-bottom: #494850 double 0.5em;
-                border-left: #494850 double 0.5em;
-                border-right: #494850 double 0.5em;
+                box-shadow: 0.0 0.5em 1em #494850;
             }
 
                 #ths {
                     background-color: black;
-                    border-top: white double 0.5em;
-                    border-bottom: white double 0.5em;
-                    border-left: white double 0.5em;
-                    border-right: white double 0.5em;
                 }
 
         .experience p {

@@ -192,12 +192,13 @@
     .header-content {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-content: space-around;
         text-decoration: none;
         padding: 0.5em;
         height: 18vh;
-        background-color: #67AAF9;
+        background-color: white;
+        border: solid 1px #67AAF9;
     }
 
         #header_info_box {
@@ -205,16 +206,24 @@
             flex-flow: row wrap;
             justify-content: flex-start;
             align-content: space-around;
+            height: 100%;
+            width: 60%;
+            position: absolute;
+            top: 0;
+            right: 1.5%;
         }
 
         #header_img {
-            max-height: 16vh;
+            height: 100%;
             background-color: white;
-            border-radius: 100%;
+            border: solid #67AAF9 1em;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         .header-content * {
-            color: white !important;
+            color: black;
             line-height: 1em;
         }
 
