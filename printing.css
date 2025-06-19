@@ -301,6 +301,12 @@
                     padding: 0 0 0 2vw;
                 }
 
+                    .e-about ul li {
+                        list-style: none;
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+
             .job {
                 border-left: solid 1px #e8b130;
                 padding-left: 0.5em;

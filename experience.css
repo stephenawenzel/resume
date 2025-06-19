@@ -362,6 +362,11 @@ main {
         padding: 2em 0.5em;
     }
 
+    #vinblastine {
+        background-color: black;
+        padding: 2em 0.5em;
+    }
+
     #orgopm {
         background-color: white;
         aspect-ratio: 3 / 2;
