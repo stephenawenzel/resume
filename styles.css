@@ -89,7 +89,7 @@ header {
             margin: 0;
             padding: 0;
             position: absolute;
-            top: 5vh;
+            top: 7.5em;
         }
         
         .active a { 
@@ -110,6 +110,7 @@ header {
             padding: 0;
             color: #67AAF9 !important;
             background-color: white;
+            font-size: 1.5em;
         }
         
         #menu {
@@ -117,7 +118,7 @@ header {
             flex-flow: row wrap;
             justify-content: center;
             align-content: center;
-            height: 5vh;
+            height: 5em;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -234,7 +235,7 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     main {
-        padding-top: 9em;
+        padding-top: 20em;
         color: white;
         height: 56em;
         max-height: 70vh;
@@ -258,22 +259,6 @@ header {
         .box p {
             margin-bottom: 0 !important;
         }
-    
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 30vh;
-        margin-bottom: 3em;
-    }
-
-        #headshot {
-            border-radius: 2%;
-            background-color:white;
-            height: 100%;
-            box-shadow: 0.0 0.5em 1em #494850;
-        }
 
     #title {
         letter-spacing: 0.3em;
@@ -281,7 +266,11 @@ header {
 
     #updated {
         letter-spacing: 0.1em;
-        color: hsla(255, 100%, 100%, 0.3);
+        color: hsla(255, 100%, 100%, 0.4);
+    }
+
+    #coded {
+        margin-top: 4em;
     }
 
 
@@ -293,15 +282,6 @@ header {
         max-height: 90vh;
     }
     
-    .headshot_box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        height: 65vh;
-        margin-bottom: 0;
-    }
-    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -309,22 +289,10 @@ header {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-
-    #headshot {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-
-    #headshot {
-        width: initial;
-        height: 100%;
-        object-fit: contain;
-    }
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
@@ -367,12 +335,12 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     #signature_stephen, #title {
-    animation-name: signature_stephen;
-    animation-duration: 4s;
+        animation-name: signature_stephen;
+        animation-duration: 4s;
     }
     
     @keyframes signature_stephen {
-    from {opacity: 0}
+    from {opacity: 0.2}
     to {opacity: 1}
     }
 

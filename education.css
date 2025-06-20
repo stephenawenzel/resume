@@ -306,6 +306,17 @@ header {
                     background-color: black;
                 }
 
+                #caspa {
+                    max-height: initial;
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    margin-bottom: 1em;
+                    padding: 1em;
+                    background-color: white;
+                    box-shadow: 0.0 0.5em 1em #494850;
+                }
+
         .experience p {
             margin: 0;
         }
