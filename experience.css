@@ -9,7 +9,7 @@ body {
     /* Currently not supported in Opera but will be soon */
     -o-user-select: none;
     user-select: none;
-    font-family: 'EB Garamond', serif;
+    font-family:'Times New Roman', Times, serif;
     background-color: #67AAF9;
 }
      
@@ -27,7 +27,8 @@ body {
 .btn:link, .btn:visited, .btn:hover, .btn:active {
     background-color: white;
     color: black;
-    border: none;
+    border: solid gray 2px;
+    border-radius: 0.5em;
 }
 
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -172,6 +173,10 @@ header {
         flex-flow: row wrap;
         justify-content: center;
     }
+
+    .e-about ul li {
+        text-align: center;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -235,7 +240,7 @@ header {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 main {
-    padding-top: 4em;
+    padding-top: 2em;
     background-color: #67AAF9;
     display: flex; 
     flex-flow: row wrap;
@@ -264,7 +269,7 @@ main {
             background-color: #494850;
             text-align: center;
             font-size: 1.2em;
-            margin: 3em;
+            margin: 2em;
             border: solid white 0.5em;
             box-shadow: 0.0 0.5em 1em #494850;
         }
@@ -274,6 +279,7 @@ main {
                 background-color: white;
                 border-bottom: solid 0.1em white;
                 color: black;
+                font-size: 1.2em;
             }
 
             .e-co {
@@ -312,13 +318,15 @@ main {
             }
 
             .e-about ul li {
-                padding: 2em 1em;
-                list-style-position: inside;
-                list-style-type: none;
+                padding: 0.5em 0.5em;
+                list-style: none;
                 border-top: white solid 0.1em;
                 border-bottom: white solid 0.1em;
-                color: white;
-                background-color: #494850;
+                border-left: solid 0.5em #494850;
+                border-right: solid 0.5em #494850;
+                margin: 0.5em 0;
+                color: black;
+                background-color: white;
             }
 
     .image_and_link {
@@ -331,21 +339,23 @@ main {
     }
 
         .image_and_link img {
-            padding: 1em 0;
+            padding: 0 0;
+            border-radius: 0.5em;
+            max-width: 90%;
         }
 
     #duke_eye_center {
-        background-color: white;
+        background-color: none;
+        margin: 0.5em;
     }
 
     #saw_photo {
         background-color: black;
-        padding: 2em 0.5em;
+        margin: 0.5em;
     }
 
     .wcent {
-        background-color: white;
-        padding: 0;
+        background-color: none;
     }
 
     #wfps {
@@ -359,21 +369,35 @@ main {
 
     #dtat {
         background-color: black;
-        padding: 2em 0.5em;
+        padding: 0.5em;
+        margin-bottom: 1em;
     }
 
     #vinblastine {
         background-color: black;
-        padding: 2em 0.5em;
+        padding:  0.5em;
+    }
+
+    #pevol {
+        background-color: none;
+        margin: 0.5em;
+    }
+
+    #thsband {
+        background-color: none;
+        margin: 0.5em;
+    }
+
+    #scouts {
+        background-color: none;
     }
 
     #orgopm {
         background-color: white;
         aspect-ratio: 3 / 2;
-        padding: 0.5em;
+        margin: 0.5em;
     }
 
     #cssc_pic {
-        background-color: white;
         border-radius: 3em;
     }

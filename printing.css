@@ -9,7 +9,7 @@
         /* Currently not supported in Opera but will be soon */
         -o-user-select: none;
         user-select: none;
-        font-family: 'EB Garamond', serif;
+        font-family:'Times New Roman', Times, serif;
         cursor: default;
     }
 
@@ -165,7 +165,7 @@
         border-bottom: solid gray 0.1em;
         color: black;
         padding: 0.5em 0 0.5em 0;
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 
     #print-button {
@@ -184,14 +184,16 @@
     .header-content {
         text-decoration: none;
         padding: 0;
-        margin-top: 1em;
+        margin: 2em 0 1em 0;
         color: black;
         width: 100vw;
-        height: 6em;
+        height: 7em;
     }
 
         #name {
             font-size: 3em;
+            padding: 0;
+            line-height: 0.75em;
         }
 
         #header_info_box {
@@ -230,6 +232,7 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
+            margin-bottom: 1em;
         }
 
             .experience * {
@@ -264,22 +267,19 @@
 
                 .e-time {
                     color: black;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
                     display: block;
                     box-sizing: border-box;
-                    text-align: right;
-                    width: 50%;
                     font-size: 1.1em;
                 }
 
                 .e-location {
                     color: black;
+                    font-size: 1.1em;
                 }
 
                 .e-about ul {
-                    padding: 1em 0 0.5em 1.4em;
+                    padding: 0 0 0 2em;
+                    font-size: 1em;
                 }
 
                     .e-about ul li {
@@ -287,57 +287,21 @@
                         line-height: 1.4em;
                     }
 
-            .job {
-                border-left: solid 1px #e8b130;
-                padding-left: 0.5em;
-            }
 
         #others {
             padding: 0;
             text-align: left;
-            margin-top: 1em;
         }
 
-            .btn {
-                height: 2em;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-content: center;
-                margin: 3vh 0 0 0;
-                font-weight: 500;
-                border-radius: 15px;
-                border: none;
-            }
-
-            .skills {
-                border-bottom: 2px solid #e8b130;
-                padding-bottom: 1em;
-            }
-
             .act-border {
-                padding: 0;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: flex-start;
                 align-items: space-between;
-                margin-bottom: 1em;
             }
 
             .activity {
-                margin-top: 1em;
-                padding-left: 1em;
-                padding-right: 1em;
                 text-align: left;
-                border-left: #e8b130 1px solid;
             }
 
-            #education {
-                height: 18vh;
-                border: none;
-            }
-
-            #experience {
-                margin-top: 1em;
-            }
 }

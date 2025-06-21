@@ -9,7 +9,7 @@ body {
     /* Currently not supported in Opera but will be soon */
     -o-user-select: none;
     user-select: none;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #67AAF9;
 }
      
