@@ -29,6 +29,7 @@ body {
     color: black;
     border: solid gray 2px;
     border-radius: 0.5em;
+    max-width: 80ch;
 }
 
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -177,6 +178,10 @@ header {
     .e-about ul li {
         text-align: center;
     }
+
+    .image_and_link img {
+        max-width: 10em;
+    }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -264,7 +269,7 @@ main {
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            padding: 0 0 1em 0;
+            padding: 0;
             color: white;
             background-color: #494850;
             text-align: center;
@@ -272,6 +277,7 @@ main {
             margin: 2em;
             border: solid white 0.5em;
             box-shadow: 0.0 0.5em 1em #494850;
+            max-width: 80ch;
         }
 
             .e-titles {
@@ -313,8 +319,10 @@ main {
             .e-about ul {
                 font-size: 1.1em;
                 padding: 0;
-                border-top: white solid 0.1em;
-                border-bottom: white solid 0.1em;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
             }
 
             .e-about ul li {
@@ -322,11 +330,10 @@ main {
                 list-style: none;
                 border-top: white solid 0.1em;
                 border-bottom: white solid 0.1em;
-                border-left: solid 0.5em #494850;
-                border-right: solid 0.5em #494850;
                 margin: 0.5em 0;
                 color: black;
                 background-color: white;
+                max-width: 120ch;
             }
 
     .image_and_link {
@@ -341,7 +348,7 @@ main {
         .image_and_link img {
             padding: 0 0;
             border-radius: 0.5em;
-            max-width: 90%;
+            max-width: 80ch;
         }
 
     #duke_eye_center {
@@ -371,11 +378,13 @@ main {
         background-color: black;
         padding: 0.5em;
         margin-bottom: 1em;
+        max-width: initial;
     }
 
     #vinblastine {
         background-color: black;
         padding:  0.5em;
+        max-width: initial;
     }
 
     #pevol {
