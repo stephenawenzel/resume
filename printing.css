@@ -158,18 +158,14 @@
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
-    }
-
-    .divider {
-        height: 1px;
-        background-color: #e8b130 !important;
-        margin-top: 0.5vh;
-        margin-bottom: 0.5vh;
+        font-size: 1.4em;
     }
 
     .section-titles {
-        font-size: 16pt;
-        padding: 2vh 0 2vh 0;
+        border-bottom: solid gray 0.1em;
+        color: black;
+        padding: 0.5em 0 0.5em 0;
+        font-size: 1.7em;
     }
 
     #print-button {
@@ -186,70 +182,70 @@
     /*-------Header----------------*/
 
     .header-content {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-content: space-around;
         text-decoration: none;
-        padding: 0.5em;
-        height: 18vh;
-        background-color: white;
+        padding: 0;
+        margin-top: 1em;
+        color: black;
+        width: 100vw;
+        height: 6em;
     }
 
+        #name {
+            font-size: 3em;
+        }
+
         #header_info_box {
+            position: absolute;
+            top: 0;
+            right: 0;
             display: flex;
             flex-flow: row wrap;
-            justify-content: flex-start;
-            align-content: space-around;
-            height: 100%;
-            background-color: lightblue;
+            justify-content: flex-end;
+            align-content: flex-start;
+            text-align: left;
+            padding: 0;
+            line-height: 1.2em;
+            font-weight: bold;
         }
 
         .header-content * {
             color: black;
-            line-height: 1em;
-        }
-
-        .header-content h1 {
-            font-size: 20pt;
-            padding-bottom: 4pt;
+            padding: 0;
         }
 
         #email {
-            color: #2f2f2f;
             text-decoration: none;
         }
 
         #location {
-            color: #2f2f2f;
             text-decoration: none;
         }
 
         #phone {
-            color: #2f2f2f;
             text-decoration: none;
         }
-
-        /*-------Experience----------------*/
 
         .experience {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
         }
 
             .experience * {
-                padding: 0 0 0 0;
-                margin: 0 0 0 0;
+                padding: 0;
+                margin: 0;
                 color: black;
                 line-height: 1.5em;
             }
 
+            .experience_title {
+                margin-top: 0.3em;
+                margin-bottom: 0;
+            }
+
             .e-about {
-                margin: 0.25vh 0 0.25vh 0;
+                margin: 0.1em 0 0.1em 0;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: flex-start;
@@ -257,42 +253,38 @@
             }
 
                 .e-titles {
-                    font-size: 14pt;
+                    font-size: 1.1em;
+                    font-weight: bold;
                 }
 
                 .e-co {
-                    font-size: 12pt;
-                    color: #2f2f2f;
+                    color: black;
+                    font-size: 1.1em;
                 }
 
                 .e-time {
-                    color: #2f2f2f;
+                    color: black;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    box-sizing: border-box;
+                    text-align: right;
+                    width: 50%;
+                    font-size: 1.1em;
                 }
 
-                    #experience .e-time {
-                        text-align: start;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        display: block;
-                        box-sizing: border-box;
-                        text-align: right;
-                        width: 50%;
-                    }
-
                 .e-location {
-                    color: #2f2f2f;
-                    padding-bottom: 0.5vh;
+                    color: black;
                 }
 
                 .e-about ul {
-                    padding: 0 0 0 2vw;
+                    padding: 1em 0 0.5em 1.4em;
                 }
 
                     .e-about ul li {
-                        list-style: none;
-                        margin-top: 0.5em;
-                        margin-bottom: 0.5em;
+                        list-style: disc outside;
+                        line-height: 1.4em;
                     }
 
             .job {
@@ -301,22 +293,10 @@
             }
 
         #others {
-            border: 0.2em solid #67AAF9;
-            padding: 0 0 0.5em 0;
-            margin-top: 2em;
+            padding: 0;
+            text-align: left;
+            margin-top: 1em;
         }
-
-            #others h2 {
-                background-color: #67AAF9;
-                padding-left: 1em;
-                color: white;
-                font-size: 18pt;
-            }
-
-            .skills p {
-                line-height: 1.1em;
-                font-size: 12pt;
-            }
 
             .btn {
                 height: 2em;
@@ -335,30 +315,29 @@
                 padding-bottom: 1em;
             }
 
-            .certifications {
-                margin-top: 1em;
+            .act-border {
+                padding: 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: space-between;
+                margin-bottom: 1em;
             }
-
-                .cert {
-                    margin-top: 1em;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    text-align: center;
-                }
 
             .activity {
                 margin-top: 1em;
-                padding-left: 5px;
-                padding-right: 5px;
-                text-align: center;
-            }
-
-            .activity h4, .activity p {
-                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                text-align: left;
+                border-left: #e8b130 1px solid;
             }
 
             #education {
                 height: 18vh;
                 border: none;
+            }
+
+            #experience {
+                margin-top: 1em;
             }
 }
