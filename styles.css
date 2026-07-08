@@ -206,7 +206,7 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
     main {
-        padding-top: 20em;
+        padding-top: 15em;
         color: white;
         height: 56em;
         max-height: 70vh;
@@ -241,61 +241,6 @@ header {
     }
 
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-
-    main {
-        padding-top: 3em;
-        max-height: 90vh;
-    }
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
-
-
-
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
-
 
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -326,24 +271,3 @@ header {
     html::-webkit-scrollbar-track {
         display: none;
     }
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
