@@ -2,15 +2,8 @@
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-body {    
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 */
-    /* Currently not supported in Opera but will be soon */
-    -o-user-select: none;
-    user-select: none;
+body {
     font-family:'Times New Roman', Times, serif;
-    background-color: #67AAF9;
 }
      
 .btn {
@@ -30,29 +23,6 @@ body {
     border: solid gray 2px;
     border-radius: 0.5em;
     max-width: 80ch;
-}
-
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-
-    html::-webkit-scrollbar {
-        width: 1em;
-        background: white;
-    }
-    
-    html::-webkit-scrollbar-button {
-        display: none;
-    }
-    
-    html::-webkit-scrollbar-thumb {
-        background:#E8B130;
-        border-radius: 5px;
-    }
-    
-    html::-webkit-scrollbar-track {
-        background: white;
-    }
-        
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -245,11 +215,12 @@ header {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 main {
-    padding-top: 2em;
+    padding-top: 3em;
     background-color: #67AAF9;
     display: flex; 
     flex-flow: row wrap;
     justify-content: center;
+    font-size: 1.2em;
 }
 
     .experience {
@@ -264,149 +235,72 @@ main {
             line-height: 1.6em;
         }
 
-        .job {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            color: white;
-            background-color: #494850;
-            text-align: center;
-            font-size: 1.2em;
-            margin: 2em;
-            border: solid white 0.5em;
-            box-shadow: 0.0 0.5em 1em #494850;
-            max-width: 80ch;
-        }
-
-            .e-titles {
-                padding: 1em 0.5em;
-                background-color: white;
-                border-bottom: solid 0.1em white;
-                color: black;
-                font-size: 1.2em;
-            }
-
-            .e-co {
-                font-size: 1em;
-                margin: 0;
-                padding: 0.2em 0.1em;
-            }
-
-            .e-time {
-                font-size: 1em;
-                margin: 0;
-                padding: 0.2em 0.1em;
-            }
-
-            .e-location {
-                font-size: 1em;
-                margin: 0;
-                padding: 0.2em 0.1em;
-            }
-
         .e-about {
-            margin: 0;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-content: center;
-            padding: 0;
             color: white;
+            max-width: 85ch;
         }
 
-            .e-about ul {
-                font-size: 1.1em;
+            .job {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
                 padding: 0;
+                color: white;
+                text-align: center;
+                margin: 2em 0;
+                border: solid white 0.5em;
+                box-shadow: 0.0 0.5em 1em #494850;
+                background-color: #494850;
+            }
+
+                .job p {
+                    padding: 0.5em;
+                }
+
+                .e-titles {
+                    padding: 1em 0.5em;
+                    background-color: white;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1.7em;
+                }
+
+                .e-co {
+                    margin: 0;
+                    padding: 0.2em 0.1em;
+                }
+
+                .e-time {
+                    margin: 0;
+                    padding: 0.2em 0.1em;
+                }
+
+                .e-location {
+                    margin: 0;
+                    padding: 0.2em 0.1em;
+                }
+
+            .e-about ul {
+                padding: 2em 1em;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 align-content: center;
+                border-radius: 1ch;
+                background-color: hsla(255, 100%, 0%, 0.2);
             }
 
             .e-about ul li {
-                padding: 0.5em 0.5em;
+                padding: 0.5em 0.5em 0.5em 2em;
                 list-style: none;
-                border-top: white solid 0.1em;
-                border-bottom: white solid 0.1em;
                 margin: 0.5em 0;
-                color: black;
-                background-color: white;
                 max-width: 120ch;
+                color: white;
+                text-align: left;
+                border-left: solid white 0.5ch;
             }
-
-    .image_and_link {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-        .image_and_link img {
-            padding: 0 0;
-            border-radius: 0.5em;
-            max-width: 80ch;
-        }
-
-    #duke_eye_center {
-        background-color: none;
-        margin: 0.5em;
-    }
-
-    #saw_photo {
-        background-color: black;
-        margin: 0.5em;
-    }
-
-    .wcent {
-        background-color: none;
-    }
-
-    #wfps {
-        background-color: black;
-    }
-
-    #mea {
-        background-color: white;
-        padding: 3em 0.5em;
-    }
-
-    #dtat {
-        background-color: black;
-        padding: 0.5em;
-        margin-bottom: 1em;
-        max-width: initial;
-    }
-
-    #vinblastine {
-        background-color: black;
-        padding:  0.5em;
-        max-width: initial;
-    }
-
-    #pevol {
-        background-color: none;
-        margin: 0.5em;
-    }
-
-    #thsband {
-        background-color: none;
-        margin: 0.5em;
-    }
-
-    #scouts {
-        background-color: none;
-    }
-
-    #orgopm {
-        background-color: white;
-        aspect-ratio: 3 / 2;
-        margin: 0.5em;
-    }
-
-    #cssc_pic {
-        border-radius: 3em;
-    }

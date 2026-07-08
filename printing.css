@@ -2,13 +2,7 @@
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-    body {    
-        -webkit-user-select: none; /* Webkit */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE 10 */
-        /* Currently not supported in Opera but will be soon */
-        -o-user-select: none;
-        user-select: none;
+    body {
         font-family:'Times New Roman', Times, serif;
         cursor: default;
     }
@@ -110,32 +104,14 @@
 
     }
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
 /*---------------------- PRINTING -------------------------------*/
-@media print {
 
-    #extra_margin {
-        margin-top: 2em;
-    }
+@page {
+  size: letter; /* or A4 */
+  margin: 0.5in;
+}
+
+@media print {
 
     header {
         display: none !important;
@@ -151,14 +127,15 @@
     body {
         cursor: default;
         text-decoration: none;
+        padding: 1em;
     }
 
     main {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 1.4em;
+        justify-content: center;
+        align-content: center;
+        font-size: 1em;
     }
 
     .section-titles {
@@ -182,29 +159,29 @@
     /*-------Header----------------*/
 
     .header-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
-        padding: 0;
-        margin: 2em 0 1em 0;
+        margin: 0;
         color: black;
+        text-align: center;
         width: 100vw;
-        height: 7em;
     }
 
         #name {
-            font-size: 3em;
-            padding: 0;
+            font-size: 2em;
+            padding: 0 0 0.2em 0;
+            margin: 0 0 1em 0;
             line-height: 0.75em;
         }
 
         #header_info_box {
-            position: absolute;
-            top: 0;
-            right: 0;
             display: flex;
             flex-flow: row wrap;
-            justify-content: flex-end;
-            align-content: flex-start;
-            text-align: left;
+            justify-content: center;
+            align-items: center;
             padding: 0;
             line-height: 1.2em;
             font-weight: bold;
@@ -212,7 +189,7 @@
 
         .header-content * {
             color: black;
-            padding: 0;
+            padding: 0.1em;
         }
 
         #email {
@@ -232,7 +209,8 @@
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: space-between;
-            margin-bottom: 1em;
+            margin-bottom: 0.65em;
+            width: 100%;
         }
 
             .experience * {
@@ -270,6 +248,7 @@
                     display: block;
                     box-sizing: border-box;
                     font-size: 1.1em;
+                    font-style: italic;
                 }
 
                 .e-location {
@@ -277,8 +256,12 @@
                     font-size: 1.1em;
                 }
 
+                .job .e-co, .e-time {
+                    padding: 0 0 0 0.5em;
+                }
+
                 .e-about ul {
-                    padding: 0 0 0 2em;
+                    padding: 0 0 0 2.5em;
                     font-size: 1em;
                 }
 
