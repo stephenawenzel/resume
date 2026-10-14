@@ -22,7 +22,9 @@
 
     .btn {
         margin-top: 3vh;
-        height: 3rem;
+        padding: 0.5em 1em;
+        min-width: 30ch;
+        font-size: 1.3em;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -135,14 +137,14 @@
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        font-size: 1em;
+        font-size: 11pt;
     }
 
     .section-titles {
         border-bottom: solid gray 0.1em;
         color: black;
         padding: 0.5em 0 0.5em 0;
-        font-size: 1.3em;
+        font-size: 12pt;
     }
 
     #print-button {
@@ -228,6 +230,7 @@
             .experience_title {
                 margin-top: 0.3em;
                 margin-bottom: 0;
+                font-size: 16pt;
             }
 
             .e-about {
@@ -239,7 +242,7 @@
             }
 
                 .e-titles {
-                    font-size: 1.1em;
+                    font-size: 12pt;
                     font-weight: bold;
                 }
 
@@ -252,13 +255,13 @@
                     color: black;
                     display: block;
                     box-sizing: border-box;
-                    font-size: 1.1em;
+                    font-size: 10pt;
                     font-style: italic;
                 }
 
                 .e-location {
                     color: black;
-                    font-size: 1.1em;
+                    font-size: 10pt;
                 }
 
                 .job .e-co, .e-time {
@@ -267,7 +270,7 @@
 
                 .e-about ul {
                     padding: 0 0 0 2.5em;
-                    font-size: 1em;
+                    font-size: 11pt;
                 }
 
                     .e-about ul li {
